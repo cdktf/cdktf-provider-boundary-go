@@ -27,6 +27,10 @@ type CredentialLibraryVaultConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault#path CredentialLibraryVault#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
+	// The credential mapping override.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault#credential_mapping_overrides CredentialLibraryVault#credential_mapping_overrides}
+	CredentialMappingOverrides *map[string]*string `field:"optional" json:"credentialMappingOverrides" yaml:"credentialMappingOverrides"`
 	// The type of credential the library generates.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault#credential_type CredentialLibraryVault#credential_type}

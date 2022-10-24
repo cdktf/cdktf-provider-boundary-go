@@ -24,6 +24,9 @@ type CredentialLibraryVault interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CredentialMappingOverrides() *map[string]*string
+	SetCredentialMappingOverrides(val *map[string]*string)
+	CredentialMappingOverridesInput() *map[string]*string
 	CredentialStoreId() *string
 	SetCredentialStoreId(val *string)
 	CredentialStoreIdInput() *string
@@ -105,6 +108,7 @@ type CredentialLibraryVault interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCredentialMappingOverrides()
 	ResetCredentialType()
 	ResetDescription()
 	ResetHttpMethod()
@@ -163,6 +167,26 @@ func (j *jsiiProxy_CredentialLibraryVault) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CredentialLibraryVault) CredentialMappingOverrides() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"credentialMappingOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CredentialLibraryVault) CredentialMappingOverridesInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"credentialMappingOverridesInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +507,17 @@ func (j *jsiiProxy_CredentialLibraryVault)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CredentialLibraryVault)SetCredentialMappingOverrides(val *map[string]*string) {
+	if err := j.validateSetCredentialMappingOverridesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialMappingOverrides",
 		val,
 	)
 }
@@ -835,6 +870,14 @@ func (c *jsiiProxy_CredentialLibraryVault) OverrideLogicalId(newLogicalId *strin
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CredentialLibraryVault) ResetCredentialMappingOverrides() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCredentialMappingOverrides",
+		nil, // no parameters
 	)
 }
 

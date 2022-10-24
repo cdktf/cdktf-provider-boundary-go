@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package credentiallibraryvault
 
@@ -58,6 +57,10 @@ func validateCredentialLibraryVault_IsConstructParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_CredentialLibraryVault) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CredentialLibraryVault) validateSetCredentialMappingOverridesParameters(val *map[string]*string) error {
 	return nil
 }
 
