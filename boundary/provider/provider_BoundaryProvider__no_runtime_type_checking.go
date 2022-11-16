@@ -16,6 +16,14 @@ func validateBoundaryProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBoundaryProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBoundaryProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BoundaryProvider) validateSetTlsInsecureParameters(val interface{}) error {
 	return nil
 }

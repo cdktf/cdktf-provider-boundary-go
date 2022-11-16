@@ -56,6 +56,14 @@ func validateHostCatalogPlugin_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHostCatalogPlugin_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHostCatalogPlugin_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HostCatalogPlugin) validateSetAttributesJsonParameters(val *string) error {
 	return nil
 }

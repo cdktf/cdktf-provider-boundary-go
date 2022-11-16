@@ -2,10 +2,10 @@ package accountpassword
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/accountpassword/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -603,6 +603,44 @@ func AccountPassword_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-boundary.accountPassword.AccountPassword",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AccountPassword_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccountPassword_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.accountPassword.AccountPassword",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AccountPassword_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccountPassword_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.accountPassword.AccountPassword",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

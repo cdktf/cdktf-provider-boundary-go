@@ -56,6 +56,14 @@ func validateAuthMethodOidc_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAuthMethodOidc_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAuthMethodOidc_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthMethodOidc) validateSetAccountClaimMapsParameters(val *[]*string) error {
 	return nil
 }

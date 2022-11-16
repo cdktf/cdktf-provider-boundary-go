@@ -56,6 +56,14 @@ func validateCredentialSshPrivateKey_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCredentialSshPrivateKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCredentialSshPrivateKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialSshPrivateKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateHostSetStatic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHostSetStatic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHostSetStatic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HostSetStatic) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

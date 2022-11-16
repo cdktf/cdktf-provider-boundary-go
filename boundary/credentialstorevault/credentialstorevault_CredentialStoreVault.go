@@ -2,10 +2,10 @@ package credentialstorevault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorevault/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/credentialstorevault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -799,6 +799,44 @@ func CredentialStoreVault_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CredentialStoreVault_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCredentialStoreVault_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CredentialStoreVault_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCredentialStoreVault_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

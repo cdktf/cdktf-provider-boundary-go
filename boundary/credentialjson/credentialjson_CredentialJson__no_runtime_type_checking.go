@@ -56,6 +56,14 @@ func validateCredentialJson_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCredentialJson_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCredentialJson_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialJson) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateHostSetPlugin_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHostSetPlugin_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHostSetPlugin_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HostSetPlugin) validateSetAttributesJsonParameters(val *string) error {
 	return nil
 }

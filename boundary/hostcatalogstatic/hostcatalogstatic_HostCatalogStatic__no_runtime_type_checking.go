@@ -56,6 +56,14 @@ func validateHostCatalogStatic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHostCatalogStatic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHostCatalogStatic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HostCatalogStatic) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

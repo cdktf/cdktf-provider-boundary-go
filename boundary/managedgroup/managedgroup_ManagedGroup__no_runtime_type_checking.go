@@ -56,6 +56,14 @@ func validateManagedGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateManagedGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagedGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedGroup) validateSetAuthMethodIdParameters(val *string) error {
 	return nil
 }

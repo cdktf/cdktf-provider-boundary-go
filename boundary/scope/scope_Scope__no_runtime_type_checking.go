@@ -56,6 +56,14 @@ func validateScope_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateScope_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateScope_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Scope) validateSetAutoCreateAdminRoleParameters(val interface{}) error {
 	return nil
 }

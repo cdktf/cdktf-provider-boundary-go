@@ -2,10 +2,10 @@ package hostsetstatic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetstatic/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/hostsetstatic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -569,6 +569,44 @@ func HostSetStatic_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-boundary.hostSetStatic.HostSetStatic",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HostSetStatic_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHostSetStatic_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.hostSetStatic.HostSetStatic",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HostSetStatic_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHostSetStatic_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.hostSetStatic.HostSetStatic",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

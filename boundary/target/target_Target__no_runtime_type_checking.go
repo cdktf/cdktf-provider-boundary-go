@@ -56,6 +56,14 @@ func validateTarget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTarget_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTarget_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Target) validateSetBrokeredCredentialSourceIdsParameters(val *[]*string) error {
 	return nil
 }

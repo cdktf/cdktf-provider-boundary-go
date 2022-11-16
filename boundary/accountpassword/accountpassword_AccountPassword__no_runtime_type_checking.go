@@ -56,6 +56,14 @@ func validateAccountPassword_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAccountPassword_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccountPassword_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountPassword) validateSetAuthMethodIdParameters(val *string) error {
 	return nil
 }

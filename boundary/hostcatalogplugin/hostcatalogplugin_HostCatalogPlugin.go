@@ -2,10 +2,10 @@ package hostcatalogplugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalogplugin/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/hostcatalogplugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -779,6 +779,44 @@ func HostCatalogPlugin_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HostCatalogPlugin_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHostCatalogPlugin_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HostCatalogPlugin_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHostCatalogPlugin_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

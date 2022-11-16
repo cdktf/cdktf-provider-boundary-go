@@ -56,6 +56,14 @@ func validateCredentialUsernamePassword_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateCredentialUsernamePassword_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCredentialUsernamePassword_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialUsernamePassword) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package credentialsshprivatekey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v2/credentialsshprivatekey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -624,6 +624,44 @@ func CredentialSshPrivateKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CredentialSshPrivateKey_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCredentialSshPrivateKey_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CredentialSshPrivateKey_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCredentialSshPrivateKey_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

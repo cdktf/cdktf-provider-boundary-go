@@ -56,6 +56,14 @@ func validateCredentialStoreVault_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCredentialStoreVault_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCredentialStoreVault_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialStoreVault) validateSetAddressParameters(val *string) error {
 	return nil
 }
