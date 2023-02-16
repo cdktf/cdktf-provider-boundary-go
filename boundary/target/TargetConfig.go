@@ -27,6 +27,10 @@ type TargetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#type Target#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
+	// Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#address Target#address}
+	Address *string `field:"optional" json:"address" yaml:"address"`
 	// A list of brokered credential source ID's.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
@@ -39,10 +43,20 @@ type TargetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#description Target#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// A list of host source ID's.
+	// Boolean expression to filter the workers used to access this target.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#egress_worker_filter Target#egress_worker_filter}
+	EgressWorkerFilter *string `field:"optional" json:"egressWorkerFilter" yaml:"egressWorkerFilter"`
+	// A list of host source ID's. Cannot be used alongside address.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#host_source_ids Target#host_source_ids}
 	HostSourceIds *[]*string `field:"optional" json:"hostSourceIds" yaml:"hostSourceIds"`
+	// HCP Only.
+	//
+	// Boolean expression to filter the workers a user will connect to when initiating a session against this target
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#ingress_worker_filter Target#ingress_worker_filter}
+	IngressWorkerFilter *string `field:"optional" json:"ingressWorkerFilter" yaml:"ingressWorkerFilter"`
 	// A list of injected application credential source ID's.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}

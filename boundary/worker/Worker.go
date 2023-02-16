@@ -105,6 +105,7 @@ type Worker interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScopeId()
 	ResetWorkerGeneratedAuthToken()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -836,6 +837,14 @@ func (w *jsiiProxy_Worker) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Worker) ResetScopeId() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetScopeId",
 		nil, // no parameters
 	)
 }

@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/boundary/r/target boundary_target}.
 type Target interface {
 	cdktf.TerraformResource
+	Address() *string
+	SetAddress(val *string)
+	AddressInput() *string
 	BrokeredCredentialSourceIds() *[]*string
 	SetBrokeredCredentialSourceIds(val *[]*string)
 	BrokeredCredentialSourceIdsInput() *[]*string
@@ -37,6 +40,9 @@ type Target interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EgressWorkerFilter() *string
+	SetEgressWorkerFilter(val *string)
+	EgressWorkerFilterInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,6 +55,9 @@ type Target interface {
 	SetHostSourceIds(val *[]*string)
 	HostSourceIdsInput() *[]*string
 	Id() *string
+	IngressWorkerFilter() *string
+	SetIngressWorkerFilter(val *string)
+	IngressWorkerFilterInput() *string
 	InjectedApplicationCredentialSourceIds() *[]*string
 	SetInjectedApplicationCredentialSourceIds(val *[]*string)
 	InjectedApplicationCredentialSourceIdsInput() *[]*string
@@ -117,10 +126,13 @@ type Target interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAddress()
 	ResetBrokeredCredentialSourceIds()
 	ResetDefaultPort()
 	ResetDescription()
+	ResetEgressWorkerFilter()
 	ResetHostSourceIds()
+	ResetIngressWorkerFilter()
 	ResetInjectedApplicationCredentialSourceIds()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -142,6 +154,26 @@ type Target interface {
 // The jsii proxy struct for Target
 type jsiiProxy_Target struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Target) Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Target) BrokeredCredentialSourceIds() *[]*string {
@@ -254,6 +286,26 @@ func (j *jsiiProxy_Target) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Target) EgressWorkerFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"egressWorkerFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) EgressWorkerFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"egressWorkerFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Target) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -309,6 +361,26 @@ func (j *jsiiProxy_Target) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) IngressWorkerFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ingressWorkerFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) IngressWorkerFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ingressWorkerFilterInput",
 		&returns,
 	)
 	return returns
@@ -564,6 +636,17 @@ func NewTarget_Override(t Target, scope constructs.Construct, id *string, config
 	)
 }
 
+func (j *jsiiProxy_Target)SetAddress(val *string) {
+	if err := j.validateSetAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"address",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Target)SetBrokeredCredentialSourceIds(val *[]*string) {
 	if err := j.validateSetBrokeredCredentialSourceIdsParameters(val); err != nil {
 		panic(err)
@@ -624,6 +707,17 @@ func (j *jsiiProxy_Target)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Target)SetEgressWorkerFilter(val *string) {
+	if err := j.validateSetEgressWorkerFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"egressWorkerFilter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Target)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -639,6 +733,17 @@ func (j *jsiiProxy_Target)SetHostSourceIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"hostSourceIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Target)SetIngressWorkerFilter(val *string) {
+	if err := j.validateSetIngressWorkerFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ingressWorkerFilter",
 		val,
 	)
 }
@@ -1016,6 +1121,14 @@ func (t *jsiiProxy_Target) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (t *jsiiProxy_Target) ResetAddress() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAddress",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_Target) ResetBrokeredCredentialSourceIds() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1040,10 +1153,26 @@ func (t *jsiiProxy_Target) ResetDescription() {
 	)
 }
 
+func (t *jsiiProxy_Target) ResetEgressWorkerFilter() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetEgressWorkerFilter",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_Target) ResetHostSourceIds() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetHostSourceIds",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Target) ResetIngressWorkerFilter() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetIngressWorkerFilter",
 		nil, // no parameters
 	)
 }
