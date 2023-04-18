@@ -2,14 +2,14 @@ package credentiallibraryvault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/credentiallibraryvault/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentiallibraryvault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault boundary_credential_library_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault boundary_credential_library_vault}.
 type CredentialLibraryVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CredentialLibraryVault interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialMappingOverrides() *map[string]*string
 	SetCredentialMappingOverrides(val *map[string]*string)
 	CredentialMappingOverridesInput() *map[string]*string
@@ -162,8 +162,8 @@ func (j *jsiiProxy_CredentialLibraryVault) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CredentialLibraryVault) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CredentialLibraryVault) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -463,7 +463,7 @@ func (j *jsiiProxy_CredentialLibraryVault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault boundary_credential_library_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault boundary_credential_library_vault} Resource.
 func NewCredentialLibraryVault(scope constructs.Construct, id *string, config *CredentialLibraryVaultConfig) CredentialLibraryVault {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewCredentialLibraryVault(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault boundary_credential_library_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault boundary_credential_library_vault} Resource.
 func NewCredentialLibraryVault_Override(c CredentialLibraryVault, scope constructs.Construct, id *string, config *CredentialLibraryVaultConfig) {
 	_init_.Initialize()
 
@@ -503,7 +503,10 @@ func (j *jsiiProxy_CredentialLibraryVault)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CredentialLibraryVault)SetCount(val *float64) {
+func (j *jsiiProxy_CredentialLibraryVault)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

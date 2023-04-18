@@ -68,6 +68,10 @@ func (j *jsiiProxy_CredentialSshPrivateKey) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CredentialSshPrivateKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialSshPrivateKey) validateSetCredentialStoreIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package worker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/worker/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/worker/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/boundary/r/worker boundary_worker}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/worker boundary_worker}.
 type Worker interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -24,9 +24,9 @@ type Worker interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	ControllerGeneratedActivationToken() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -182,8 +182,8 @@ func (j *jsiiProxy_Worker) ControllerGeneratedActivationToken() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Worker) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Worker) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_Worker) WorkerGeneratedAuthTokenInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/worker boundary_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/worker boundary_worker} Resource.
 func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Worker {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Wor
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/worker boundary_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/worker boundary_worker} Resource.
 func NewWorker_Override(w Worker, scope constructs.Construct, id *string, config *WorkerConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_Worker)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Worker)SetCount(val *float64) {
+func (j *jsiiProxy_Worker)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

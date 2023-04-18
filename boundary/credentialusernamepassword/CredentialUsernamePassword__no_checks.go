@@ -68,6 +68,10 @@ func (j *jsiiProxy_CredentialUsernamePassword) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CredentialUsernamePassword) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialUsernamePassword) validateSetCredentialStoreIdParameters(val *string) error {
 	return nil
 }

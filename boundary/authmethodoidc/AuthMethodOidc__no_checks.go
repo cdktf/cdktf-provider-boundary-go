@@ -100,6 +100,10 @@ func (j *jsiiProxy_AuthMethodOidc) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_AuthMethodOidc) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthMethodOidc) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

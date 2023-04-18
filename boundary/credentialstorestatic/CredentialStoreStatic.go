@@ -2,14 +2,14 @@ package credentialstorestatic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/credentialstorestatic/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialstorestatic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/boundary/r/credential_store_static boundary_credential_store_static}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static boundary_credential_store_static}.
 type CredentialStoreStatic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CredentialStoreStatic interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_CredentialStoreStatic) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_CredentialStoreStatic) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CredentialStoreStatic) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,7 +344,7 @@ func (j *jsiiProxy_CredentialStoreStatic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_store_static boundary_credential_store_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static boundary_credential_store_static} Resource.
 func NewCredentialStoreStatic(scope constructs.Construct, id *string, config *CredentialStoreStaticConfig) CredentialStoreStatic {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewCredentialStoreStatic(scope constructs.Construct, id *string, config *Cr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_store_static boundary_credential_store_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static boundary_credential_store_static} Resource.
 func NewCredentialStoreStatic_Override(c CredentialStoreStatic, scope constructs.Construct, id *string, config *CredentialStoreStaticConfig) {
 	_init_.Initialize()
 
@@ -384,7 +384,10 @@ func (j *jsiiProxy_CredentialStoreStatic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CredentialStoreStatic)SetCount(val *float64) {
+func (j *jsiiProxy_CredentialStoreStatic)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

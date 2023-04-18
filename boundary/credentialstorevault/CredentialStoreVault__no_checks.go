@@ -84,6 +84,10 @@ func (j *jsiiProxy_CredentialStoreVault) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_CredentialStoreVault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialStoreVault) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

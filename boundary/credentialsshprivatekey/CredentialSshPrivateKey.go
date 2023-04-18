@@ -2,14 +2,14 @@ package credentialsshprivatekey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/credentialsshprivatekey/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialsshprivatekey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/boundary/r/credential_ssh_private_key boundary_credential_ssh_private_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}.
 type CredentialSshPrivateKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CredentialSshPrivateKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialStoreId() *string
 	SetCredentialStoreId(val *string)
 	CredentialStoreIdInput() *string
@@ -155,8 +155,8 @@ func (j *jsiiProxy_CredentialSshPrivateKey) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_CredentialSshPrivateKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CredentialSshPrivateKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,7 +436,7 @@ func (j *jsiiProxy_CredentialSshPrivateKey) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_ssh_private_key boundary_credential_ssh_private_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key} Resource.
 func NewCredentialSshPrivateKey(scope constructs.Construct, id *string, config *CredentialSshPrivateKeyConfig) CredentialSshPrivateKey {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewCredentialSshPrivateKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_ssh_private_key boundary_credential_ssh_private_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key} Resource.
 func NewCredentialSshPrivateKey_Override(c CredentialSshPrivateKey, scope constructs.Construct, id *string, config *CredentialSshPrivateKeyConfig) {
 	_init_.Initialize()
 
@@ -476,7 +476,10 @@ func (j *jsiiProxy_CredentialSshPrivateKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CredentialSshPrivateKey)SetCount(val *float64) {
+func (j *jsiiProxy_CredentialSshPrivateKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

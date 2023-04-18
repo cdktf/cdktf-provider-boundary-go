@@ -2,14 +2,14 @@ package hostsetstatic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/hostsetstatic/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hostsetstatic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static boundary_host_set_static}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static boundary_host_set_static}.
 type HostSetStatic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type HostSetStatic interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_HostSetStatic) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_HostSetStatic) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HostSetStatic) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -392,7 +392,7 @@ func (j *jsiiProxy_HostSetStatic) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static boundary_host_set_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static boundary_host_set_static} Resource.
 func NewHostSetStatic(scope constructs.Construct, id *string, config *HostSetStaticConfig) HostSetStatic {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewHostSetStatic(scope constructs.Construct, id *string, config *HostSetSta
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static boundary_host_set_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static boundary_host_set_static} Resource.
 func NewHostSetStatic_Override(h HostSetStatic, scope constructs.Construct, id *string, config *HostSetStaticConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_HostSetStatic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HostSetStatic)SetCount(val *float64) {
+func (j *jsiiProxy_HostSetStatic)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

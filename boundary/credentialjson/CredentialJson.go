@@ -2,14 +2,14 @@ package credentialjson
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/credentialjson/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialjson/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/boundary/r/credential_json boundary_credential_json}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_json boundary_credential_json}.
 type CredentialJson interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CredentialJson interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialStoreId() *string
 	SetCredentialStoreId(val *string)
 	CredentialStoreIdInput() *string
@@ -147,8 +147,8 @@ func (j *jsiiProxy_CredentialJson) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_CredentialJson) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CredentialJson) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_CredentialJson) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_json boundary_credential_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_json boundary_credential_json} Resource.
 func NewCredentialJson(scope constructs.Construct, id *string, config *CredentialJsonConfig) CredentialJson {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewCredentialJson(scope constructs.Construct, id *string, config *Credentia
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_json boundary_credential_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_json boundary_credential_json} Resource.
 func NewCredentialJson_Override(c CredentialJson, scope constructs.Construct, id *string, config *CredentialJsonConfig) {
 	_init_.Initialize()
 
@@ -418,7 +418,10 @@ func (j *jsiiProxy_CredentialJson)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CredentialJson)SetCount(val *float64) {
+func (j *jsiiProxy_CredentialJson)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

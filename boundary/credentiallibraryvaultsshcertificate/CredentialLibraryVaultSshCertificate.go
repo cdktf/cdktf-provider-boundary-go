@@ -2,14 +2,14 @@ package credentiallibraryvaultsshcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/credentiallibraryvaultsshcertificate/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentiallibraryvaultsshcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate}.
 type CredentialLibraryVaultSshCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CredentialLibraryVaultSshCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialStoreId() *string
 	SetCredentialStoreId(val *string)
 	CredentialStoreIdInput() *string
@@ -173,8 +173,8 @@ func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -534,7 +534,7 @@ func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) UsernameInput() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
 func NewCredentialLibraryVaultSshCertificate(scope constructs.Construct, id *string, config *CredentialLibraryVaultSshCertificateConfig) CredentialLibraryVaultSshCertificate {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewCredentialLibraryVaultSshCertificate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
 func NewCredentialLibraryVaultSshCertificate_Override(c CredentialLibraryVaultSshCertificate, scope constructs.Construct, id *string, config *CredentialLibraryVaultSshCertificateConfig) {
 	_init_.Initialize()
 
@@ -574,7 +574,10 @@ func (j *jsiiProxy_CredentialLibraryVaultSshCertificate)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_CredentialLibraryVaultSshCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_CredentialLibraryVaultSshCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

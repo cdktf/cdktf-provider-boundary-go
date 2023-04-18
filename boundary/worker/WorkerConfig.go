@@ -8,7 +8,7 @@ type WorkerConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,21 +21,21 @@ type WorkerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The description for the worker.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#description Worker#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/worker#description Worker#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The name for the worker.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#name Worker#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/worker#name Worker#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The scope for the worker. Defaults to `global`.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#scope_id Worker#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/worker#scope_id Worker#scope_id}
 	ScopeId *string `field:"optional" json:"scopeId" yaml:"scopeId"`
 	// The worker authentication token required to register the worker for the worker-led authentication flow.
 	//
 	// Leaving this blank will result in a controller generated token.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
 	WorkerGeneratedAuthToken *string `field:"optional" json:"workerGeneratedAuthToken" yaml:"workerGeneratedAuthToken"`
 }
 

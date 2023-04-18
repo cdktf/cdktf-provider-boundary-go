@@ -76,6 +76,10 @@ func (j *jsiiProxy_Target) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_Target) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Target) validateSetDefaultPortParameters(val *float64) error {
 	return nil
 }

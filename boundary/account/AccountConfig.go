@@ -8,7 +8,7 @@ type AccountConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,27 +21,27 @@ type AccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The resource ID for the auth method.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/account#auth_method_id Account#auth_method_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/account#auth_method_id Account#auth_method_id}
 	AuthMethodId *string `field:"required" json:"authMethodId" yaml:"authMethodId"`
 	// The resource type.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/account#type Account#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/account#type Account#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// The account description.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/account#description Account#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/account#description Account#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The login name for this account.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/account#login_name Account#login_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/account#login_name Account#login_name}
 	LoginName *string `field:"optional" json:"loginName" yaml:"loginName"`
 	// The account name. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/account#name Account#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/account#name Account#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The account password. Only set on create, changes will not be reflected when updating account.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/account#password Account#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/account#password Account#password}
 	Password *string `field:"optional" json:"password" yaml:"password"`
 }
 

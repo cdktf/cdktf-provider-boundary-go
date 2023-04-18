@@ -8,7 +8,7 @@ type GroupConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,19 +21,19 @@ type GroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/group#scope_id Group#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/group#scope_id Group#scope_id}
 	ScopeId *string `field:"required" json:"scopeId" yaml:"scopeId"`
 	// The group description.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/group#description Group#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/group#description Group#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Resource IDs for group members, these are most likely boundary users.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/group#member_ids Group#member_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/group#member_ids Group#member_ids}
 	MemberIds *[]*string `field:"optional" json:"memberIds" yaml:"memberIds"`
 	// The group name. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/group#name Group#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/group#name Group#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

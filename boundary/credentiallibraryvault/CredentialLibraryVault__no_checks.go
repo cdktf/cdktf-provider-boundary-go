@@ -68,6 +68,10 @@ func (j *jsiiProxy_CredentialLibraryVault) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CredentialLibraryVault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialLibraryVault) validateSetCredentialMappingOverridesParameters(val *map[string]*string) error {
 	return nil
 }

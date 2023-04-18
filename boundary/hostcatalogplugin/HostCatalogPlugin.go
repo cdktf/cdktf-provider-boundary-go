@@ -2,14 +2,14 @@ package hostcatalogplugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/hostcatalogplugin/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hostcatalogplugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog_plugin boundary_host_catalog_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog_plugin boundary_host_catalog_plugin}.
 type HostCatalogPlugin interface {
 	cdktf.TerraformResource
 	AttributesJson() *string
@@ -24,9 +24,9 @@ type HostCatalogPlugin interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -195,8 +195,8 @@ func (j *jsiiProxy_HostCatalogPlugin) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_HostCatalogPlugin) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HostCatalogPlugin) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -536,7 +536,7 @@ func (j *jsiiProxy_HostCatalogPlugin) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog_plugin boundary_host_catalog_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
 func NewHostCatalogPlugin(scope constructs.Construct, id *string, config *HostCatalogPluginConfig) HostCatalogPlugin {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewHostCatalogPlugin(scope constructs.Construct, id *string, config *HostCa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog_plugin boundary_host_catalog_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
 func NewHostCatalogPlugin_Override(h HostCatalogPlugin, scope constructs.Construct, id *string, config *HostCatalogPluginConfig) {
 	_init_.Initialize()
 
@@ -587,7 +587,10 @@ func (j *jsiiProxy_HostCatalogPlugin)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HostCatalogPlugin)SetCount(val *float64) {
+func (j *jsiiProxy_HostCatalogPlugin)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
