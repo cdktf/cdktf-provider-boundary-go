@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault boundary_credential_store_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault boundary_credential_store_vault}.
 type CredentialStoreVault interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -94,6 +94,9 @@ type CredentialStoreVault interface {
 	SetToken(val *string)
 	TokenHmac() *string
 	TokenInput() *string
+	WorkerFilter() *string
+	SetWorkerFilter(val *string)
+	WorkerFilterInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -130,6 +133,7 @@ type CredentialStoreVault interface {
 	ResetOverrideLogicalId()
 	ResetTlsServerName()
 	ResetTlsSkipVerify()
+	ResetWorkerFilter()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -555,8 +559,28 @@ func (j *jsiiProxy_CredentialStoreVault) TokenInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CredentialStoreVault) WorkerFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerFilter",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault boundary_credential_store_vault} Resource.
+func (j *jsiiProxy_CredentialStoreVault) WorkerFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault boundary_credential_store_vault} Resource.
 func NewCredentialStoreVault(scope constructs.Construct, id *string, config *CredentialStoreVaultConfig) CredentialStoreVault {
 	_init_.Initialize()
 
@@ -574,7 +598,7 @@ func NewCredentialStoreVault(scope constructs.Construct, id *string, config *Cre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault boundary_credential_store_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault boundary_credential_store_vault} Resource.
 func NewCredentialStoreVault_Override(c CredentialStoreVault, scope constructs.Construct, id *string, config *CredentialStoreVaultConfig) {
 	_init_.Initialize()
 
@@ -770,6 +794,17 @@ func (j *jsiiProxy_CredentialStoreVault)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CredentialStoreVault)SetWorkerFilter(val *string) {
+	if err := j.validateSetWorkerFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workerFilter",
 		val,
 	)
 }
@@ -1108,6 +1143,14 @@ func (c *jsiiProxy_CredentialStoreVault) ResetTlsSkipVerify() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTlsSkipVerify",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CredentialStoreVault) ResetWorkerFilter() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWorkerFilter",
 		nil, // no parameters
 	)
 }

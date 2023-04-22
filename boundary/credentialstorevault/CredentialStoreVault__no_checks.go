@@ -124,6 +124,10 @@ func (j *jsiiProxy_CredentialStoreVault) validateSetTokenParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_CredentialStoreVault) validateSetWorkerFilterParameters(val *string) error {
+	return nil
+}
+
 func validateNewCredentialStoreVaultParameters(scope constructs.Construct, id *string, config *CredentialStoreVaultConfig) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/group boundary_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/group boundary_group}.
 type Group interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_Group) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/group boundary_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/group boundary_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/group boundary_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/group boundary_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 

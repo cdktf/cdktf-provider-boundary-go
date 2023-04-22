@@ -61,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsServerName", GoMethod: "ResetTlsServerName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTlsSkipVerify", GoMethod: "ResetTlsSkipVerify"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerFilter", GoMethod: "ResetWorkerFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "scopeId", GoGetter: "ScopeId"},
 			_jsii_.MemberProperty{JsiiProperty: "scopeIdInput", GoGetter: "ScopeIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -77,6 +78,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "workerFilter", GoGetter: "WorkerFilter"},
+			_jsii_.MemberProperty{JsiiProperty: "workerFilterInput", GoGetter: "WorkerFilterInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CredentialStoreVault{}

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/target boundary_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/target boundary_target}.
 type Target interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -607,7 +607,7 @@ func (j *jsiiProxy_Target) WorkerFilterInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/target boundary_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/target boundary_target} Resource.
 func NewTarget(scope constructs.Construct, id *string, config *TargetConfig) Target {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewTarget(scope constructs.Construct, id *string, config *TargetConfig) Tar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/target boundary_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/target boundary_target} Resource.
 func NewTarget_Override(t Target, scope constructs.Construct, id *string, config *TargetConfig) {
 	_init_.Initialize()
 

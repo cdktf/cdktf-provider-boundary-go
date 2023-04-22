@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault boundary_credential_library_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_library_vault boundary_credential_library_vault}.
 type CredentialLibraryVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_CredentialLibraryVault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault boundary_credential_library_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_library_vault boundary_credential_library_vault} Resource.
 func NewCredentialLibraryVault(scope constructs.Construct, id *string, config *CredentialLibraryVaultConfig) CredentialLibraryVault {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewCredentialLibraryVault(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_library_vault boundary_credential_library_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_library_vault boundary_credential_library_vault} Resource.
 func NewCredentialLibraryVault_Override(c CredentialLibraryVault, scope constructs.Construct, id *string, config *CredentialLibraryVaultConfig) {
 	_init_.Initialize()
 

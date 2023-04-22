@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password boundary_auth_method_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method_password boundary_auth_method_password}.
 type AuthMethodPassword interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_AuthMethodPassword) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password boundary_auth_method_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method_password boundary_auth_method_password} Resource.
 func NewAuthMethodPassword(scope constructs.Construct, id *string, config *AuthMethodPasswordConfig) AuthMethodPassword {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewAuthMethodPassword(scope constructs.Construct, id *string, config *AuthM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password boundary_auth_method_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method_password boundary_auth_method_password} Resource.
 func NewAuthMethodPassword_Override(a AuthMethodPassword, scope constructs.Construct, id *string, config *AuthMethodPasswordConfig) {
 	_init_.Initialize()
 
