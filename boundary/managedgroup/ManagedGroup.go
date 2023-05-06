@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/managed_group boundary_managed_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/managed_group boundary_managed_group}.
 type ManagedGroup interface {
 	cdktf.TerraformResource
 	AuthMethodId() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ManagedGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/managed_group boundary_managed_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/managed_group boundary_managed_group} Resource.
 func NewManagedGroup(scope constructs.Construct, id *string, config *ManagedGroupConfig) ManagedGroup {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewManagedGroup(scope constructs.Construct, id *string, config *ManagedGrou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/managed_group boundary_managed_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/managed_group boundary_managed_group} Resource.
 func NewManagedGroup_Override(m ManagedGroup, scope constructs.Construct, id *string, config *ManagedGroupConfig) {
 	_init_.Initialize()
 

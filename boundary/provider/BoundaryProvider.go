@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs boundary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs boundary}.
 type BoundaryProvider interface {
 	cdktf.TerraformProvider
 	Addr() *string
@@ -47,6 +47,9 @@ type BoundaryProvider interface {
 	RecoveryKmsHcl() *string
 	SetRecoveryKmsHcl(val *string)
 	RecoveryKmsHclInput() *string
+	ScopeId() *string
+	SetScopeId(val *string)
+	ScopeIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -73,6 +76,7 @@ type BoundaryProvider interface {
 	ResetPasswordAuthMethodPassword()
 	ResetPluginExecutionDir()
 	ResetRecoveryKmsHcl()
+	ResetScopeId()
 	ResetTlsInsecure()
 	ResetToken()
 	SynthesizeAttributes() *map[string]interface{}
@@ -300,6 +304,26 @@ func (j *jsiiProxy_BoundaryProvider) RecoveryKmsHclInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BoundaryProvider) ScopeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryProvider) ScopeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BoundaryProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -371,7 +395,7 @@ func (j *jsiiProxy_BoundaryProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs boundary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs boundary} Resource.
 func NewBoundaryProvider(scope constructs.Construct, id *string, config *BoundaryProviderConfig) BoundaryProvider {
 	_init_.Initialize()
 
@@ -389,7 +413,7 @@ func NewBoundaryProvider(scope constructs.Construct, id *string, config *Boundar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs boundary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs boundary} Resource.
 func NewBoundaryProvider_Override(b BoundaryProvider, scope constructs.Construct, id *string, config *BoundaryProviderConfig) {
 	_init_.Initialize()
 
@@ -452,6 +476,14 @@ func (j *jsiiProxy_BoundaryProvider)SetRecoveryKmsHcl(val *string) {
 	_jsii_.Set(
 		j,
 		"recoveryKmsHcl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BoundaryProvider)SetScopeId(val *string) {
+	_jsii_.Set(
+		j,
+		"scopeId",
 		val,
 	)
 }
@@ -633,6 +665,14 @@ func (b *jsiiProxy_BoundaryProvider) ResetRecoveryKmsHcl() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRecoveryKmsHcl",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BoundaryProvider) ResetScopeId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetScopeId",
 		nil, // no parameters
 	)
 }
