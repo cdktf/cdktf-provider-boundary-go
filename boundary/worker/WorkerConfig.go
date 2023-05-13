@@ -21,21 +21,21 @@ type WorkerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The description for the worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/worker#description Worker#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/worker#description Worker#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The name for the worker.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/worker#name Worker#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/worker#name Worker#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The scope for the worker. Defaults to `global`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/worker#scope_id Worker#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/worker#scope_id Worker#scope_id}
 	ScopeId *string `field:"optional" json:"scopeId" yaml:"scopeId"`
 	// The worker authentication token required to register the worker for the worker-led authentication flow.
 	//
 	// Leaving this blank will result in a controller generated token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
 	WorkerGeneratedAuthToken *string `field:"optional" json:"workerGeneratedAuthToken" yaml:"workerGeneratedAuthToken"`
 }
 

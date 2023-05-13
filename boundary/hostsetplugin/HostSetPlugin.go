@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/host_set_plugin boundary_host_set_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_set_plugin boundary_host_set_plugin}.
 type HostSetPlugin interface {
 	cdktf.TerraformResource
 	AttributesJson() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_HostSetPlugin) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/host_set_plugin boundary_host_set_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_set_plugin boundary_host_set_plugin} Resource.
 func NewHostSetPlugin(scope constructs.Construct, id *string, config *HostSetPluginConfig) HostSetPlugin {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewHostSetPlugin(scope constructs.Construct, id *string, config *HostSetPlu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/host_set_plugin boundary_host_set_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_set_plugin boundary_host_set_plugin} Resource.
 func NewHostSetPlugin_Override(h HostSetPlugin, scope constructs.Construct, id *string, config *HostSetPluginConfig) {
 	_init_.Initialize()
 

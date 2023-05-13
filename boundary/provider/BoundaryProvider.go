@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs boundary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary}.
 type BoundaryProvider interface {
 	cdktf.TerraformProvider
 	Addr() *string
@@ -395,7 +395,7 @@ func (j *jsiiProxy_BoundaryProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs boundary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary} Resource.
 func NewBoundaryProvider(scope constructs.Construct, id *string, config *BoundaryProviderConfig) BoundaryProvider {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewBoundaryProvider(scope constructs.Construct, id *string, config *Boundar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs boundary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary} Resource.
 func NewBoundaryProvider_Override(b BoundaryProvider, scope constructs.Construct, id *string, config *BoundaryProviderConfig) {
 	_init_.Initialize()
 
