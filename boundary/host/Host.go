@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host boundary_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host boundary_host}.
 type Host interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_Host) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host boundary_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host boundary_host} Resource.
 func NewHost(scope constructs.Construct, id *string, config *HostConfig) Host {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewHost(scope constructs.Construct, id *string, config *HostConfig) Host {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host boundary_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host boundary_host} Resource.
 func NewHost_Override(h Host, scope constructs.Construct, id *string, config *HostConfig) {
 	_init_.Initialize()
 

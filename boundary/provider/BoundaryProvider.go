@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary}.
 type BoundaryProvider interface {
 	cdktf.TerraformProvider
 	Addr() *string
@@ -21,6 +21,12 @@ type BoundaryProvider interface {
 	AuthMethodId() *string
 	SetAuthMethodId(val *string)
 	AuthMethodIdInput() *string
+	AuthMethodLoginName() *string
+	SetAuthMethodLoginName(val *string)
+	AuthMethodLoginNameInput() *string
+	AuthMethodPassword() *string
+	SetAuthMethodPassword(val *string)
+	AuthMethodPasswordInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -69,6 +75,8 @@ type BoundaryProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
 	ResetAuthMethodId()
+	ResetAuthMethodLoginName()
+	ResetAuthMethodPassword()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -149,6 +157,46 @@ func (j *jsiiProxy_BoundaryProvider) AuthMethodIdInput() *string {
 	_jsii_.Get(
 		j,
 		"authMethodIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryProvider) AuthMethodLoginName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authMethodLoginName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryProvider) AuthMethodLoginNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authMethodLoginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryProvider) AuthMethodPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authMethodPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BoundaryProvider) AuthMethodPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authMethodPasswordInput",
 		&returns,
 	)
 	return returns
@@ -395,7 +443,7 @@ func (j *jsiiProxy_BoundaryProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary} Resource.
 func NewBoundaryProvider(scope constructs.Construct, id *string, config *BoundaryProviderConfig) BoundaryProvider {
 	_init_.Initialize()
 
@@ -413,7 +461,7 @@ func NewBoundaryProvider(scope constructs.Construct, id *string, config *Boundar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary} Resource.
 func NewBoundaryProvider_Override(b BoundaryProvider, scope constructs.Construct, id *string, config *BoundaryProviderConfig) {
 	_init_.Initialize()
 
@@ -444,6 +492,22 @@ func (j *jsiiProxy_BoundaryProvider)SetAuthMethodId(val *string) {
 	_jsii_.Set(
 		j,
 		"authMethodId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BoundaryProvider)SetAuthMethodLoginName(val *string) {
+	_jsii_.Set(
+		j,
+		"authMethodLoginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BoundaryProvider)SetAuthMethodPassword(val *string) {
+	_jsii_.Set(
+		j,
+		"authMethodPassword",
 		val,
 	)
 }
@@ -625,6 +689,22 @@ func (b *jsiiProxy_BoundaryProvider) ResetAuthMethodId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAuthMethodId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BoundaryProvider) ResetAuthMethodLoginName() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAuthMethodLoginName",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BoundaryProvider) ResetAuthMethodPassword() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAuthMethodPassword",
 		nil, // no parameters
 	)
 }

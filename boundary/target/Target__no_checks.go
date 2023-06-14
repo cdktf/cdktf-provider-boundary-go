@@ -80,6 +80,10 @@ func (j *jsiiProxy_Target) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Target) validateSetDefaultClientPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Target) validateSetDefaultPortParameters(val *float64) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}.
 type CredentialSshPrivateKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_CredentialSshPrivateKey) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key} Resource.
 func NewCredentialSshPrivateKey(scope constructs.Construct, id *string, config *CredentialSshPrivateKeyConfig) CredentialSshPrivateKey {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewCredentialSshPrivateKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key} Resource.
 func NewCredentialSshPrivateKey_Override(c CredentialSshPrivateKey, scope constructs.Construct, id *string, config *CredentialSshPrivateKeyConfig) {
 	_init_.Initialize()
 

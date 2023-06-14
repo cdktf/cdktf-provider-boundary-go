@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target boundary_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target}.
 type Target interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -30,6 +30,9 @@ type Target interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultClientPort() *float64
+	SetDefaultClientPort(val *float64)
+	DefaultClientPortInput() *float64
 	DefaultPort() *float64
 	SetDefaultPort(val *float64)
 	DefaultPortInput() *float64
@@ -128,6 +131,7 @@ type Target interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAddress()
 	ResetBrokeredCredentialSourceIds()
+	ResetDefaultClientPort()
 	ResetDefaultPort()
 	ResetDescription()
 	ResetEgressWorkerFilter()
@@ -231,6 +235,26 @@ func (j *jsiiProxy_Target) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) DefaultClientPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultClientPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) DefaultClientPortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultClientPortInput",
 		&returns,
 	)
 	return returns
@@ -607,7 +631,7 @@ func (j *jsiiProxy_Target) WorkerFilterInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target boundary_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target} Resource.
 func NewTarget(scope constructs.Construct, id *string, config *TargetConfig) Target {
 	_init_.Initialize()
 
@@ -625,7 +649,7 @@ func NewTarget(scope constructs.Construct, id *string, config *TargetConfig) Tar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target boundary_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target} Resource.
 func NewTarget_Override(t Target, scope constructs.Construct, id *string, config *TargetConfig) {
 	_init_.Initialize()
 
@@ -676,6 +700,17 @@ func (j *jsiiProxy_Target)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Target)SetDefaultClientPort(val *float64) {
+	if err := j.validateSetDefaultClientPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultClientPort",
 		val,
 	)
 }
@@ -1136,6 +1171,14 @@ func (t *jsiiProxy_Target) ResetBrokeredCredentialSourceIds() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetBrokeredCredentialSourceIds",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Target) ResetDefaultClientPort() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDefaultClientPort",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password boundary_account_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password boundary_account_password}.
 type AccountPassword interface {
 	cdktf.TerraformResource
 	AuthMethodId() *string
@@ -109,6 +109,7 @@ type AccountPassword interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -415,7 +416,7 @@ func (j *jsiiProxy_AccountPassword) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password boundary_account_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password boundary_account_password} Resource.
 func NewAccountPassword(scope constructs.Construct, id *string, config *AccountPasswordConfig) AccountPassword {
 	_init_.Initialize()
 
@@ -433,7 +434,7 @@ func NewAccountPassword(scope constructs.Construct, id *string, config *AccountP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password boundary_account_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password boundary_account_password} Resource.
 func NewAccountPassword_Override(a AccountPassword, scope constructs.Construct, id *string, config *AccountPasswordConfig) {
 	_init_.Initialize()
 
@@ -880,6 +881,14 @@ func (a *jsiiProxy_AccountPassword) ResetPassword() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccountPassword) ResetType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetType",
 		nil, // no parameters
 	)
 }
