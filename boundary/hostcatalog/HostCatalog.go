@@ -2,14 +2,14 @@ package hostcatalog
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/hostcatalog/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/hostcatalog/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog boundary_host_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog boundary_host_catalog}.
 type HostCatalog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_HostCatalog) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog boundary_host_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog boundary_host_catalog} Resource.
 func NewHostCatalog(scope constructs.Construct, id *string, config *HostCatalogConfig) HostCatalog {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewHostCatalog(scope constructs.Construct, id *string, config *HostCatalogC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog boundary_host_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog boundary_host_catalog} Resource.
 func NewHostCatalog_Override(h HostCatalog, scope constructs.Construct, id *string, config *HostCatalogConfig) {
 	_init_.Initialize()
 

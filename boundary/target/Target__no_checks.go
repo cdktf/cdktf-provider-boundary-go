@@ -96,6 +96,10 @@ func (j *jsiiProxy_Target) validateSetEgressWorkerFilterParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_Target) validateSetEnableSessionRecordingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Target) validateSetHostSourceIdsParameters(val *[]*string) error {
 	return nil
 }
@@ -129,6 +133,10 @@ func (j *jsiiProxy_Target) validateSetSessionConnectionLimitParameters(val *floa
 }
 
 func (j *jsiiProxy_Target) validateSetSessionMaxSecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Target) validateSetStorageBucketIdParameters(val *string) error {
 	return nil
 }
 

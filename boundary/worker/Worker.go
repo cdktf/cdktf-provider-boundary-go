@@ -2,14 +2,14 @@ package worker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/worker/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/worker/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/worker boundary_worker}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker boundary_worker}.
 type Worker interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_Worker) WorkerGeneratedAuthTokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/worker boundary_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker boundary_worker} Resource.
 func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Worker {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewWorker(scope constructs.Construct, id *string, config *WorkerConfig) Wor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/worker boundary_worker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker boundary_worker} Resource.
 func NewWorker_Override(w Worker, scope constructs.Construct, id *string, config *WorkerConfig) {
 	_init_.Initialize()
 

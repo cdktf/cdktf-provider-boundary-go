@@ -2,14 +2,14 @@ package hostcatalogplugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/hostcatalogplugin/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/hostcatalogplugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog_plugin boundary_host_catalog_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin boundary_host_catalog_plugin}.
 type HostCatalogPlugin interface {
 	cdktf.TerraformResource
 	AttributesJson() *string
@@ -536,7 +536,7 @@ func (j *jsiiProxy_HostCatalogPlugin) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
 func NewHostCatalogPlugin(scope constructs.Construct, id *string, config *HostCatalogPluginConfig) HostCatalogPlugin {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewHostCatalogPlugin(scope constructs.Construct, id *string, config *HostCa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
 func NewHostCatalogPlugin_Override(h HostCatalogPlugin, scope constructs.Construct, id *string, config *HostCatalogPluginConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package authmethodoidc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/authmethodoidc/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/authmethodoidc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_oidc boundary_auth_method_oidc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_oidc boundary_auth_method_oidc}.
 type AuthMethodOidc interface {
 	cdktf.TerraformResource
 	AccountClaimMaps() *[]*string
@@ -728,7 +728,7 @@ func (j *jsiiProxy_AuthMethodOidc) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_oidc boundary_auth_method_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_oidc boundary_auth_method_oidc} Resource.
 func NewAuthMethodOidc(scope constructs.Construct, id *string, config *AuthMethodOidcConfig) AuthMethodOidc {
 	_init_.Initialize()
 
@@ -746,7 +746,7 @@ func NewAuthMethodOidc(scope constructs.Construct, id *string, config *AuthMetho
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_oidc boundary_auth_method_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_oidc boundary_auth_method_oidc} Resource.
 func NewAuthMethodOidc_Override(a AuthMethodOidc, scope constructs.Construct, id *string, config *AuthMethodOidcConfig) {
 	_init_.Initialize()
 

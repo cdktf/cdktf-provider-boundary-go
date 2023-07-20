@@ -2,14 +2,14 @@ package target
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/target/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/target/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target boundary_target}.
 type Target interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -46,6 +46,9 @@ type Target interface {
 	EgressWorkerFilter() *string
 	SetEgressWorkerFilter(val *string)
 	EgressWorkerFilterInput() *string
+	EnableSessionRecording() interface{}
+	SetEnableSessionRecording(val interface{})
+	EnableSessionRecordingInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -92,6 +95,9 @@ type Target interface {
 	SessionMaxSeconds() *float64
 	SetSessionMaxSeconds(val *float64)
 	SessionMaxSecondsInput() *float64
+	StorageBucketId() *string
+	SetStorageBucketId(val *string)
+	StorageBucketIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -135,6 +141,7 @@ type Target interface {
 	ResetDefaultPort()
 	ResetDescription()
 	ResetEgressWorkerFilter()
+	ResetEnableSessionRecording()
 	ResetHostSourceIds()
 	ResetIngressWorkerFilter()
 	ResetInjectedApplicationCredentialSourceIds()
@@ -144,6 +151,7 @@ type Target interface {
 	ResetOverrideLogicalId()
 	ResetSessionConnectionLimit()
 	ResetSessionMaxSeconds()
+	ResetStorageBucketId()
 	ResetWorkerFilter()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -325,6 +333,26 @@ func (j *jsiiProxy_Target) EgressWorkerFilterInput() *string {
 	_jsii_.Get(
 		j,
 		"egressWorkerFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) EnableSessionRecording() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSessionRecording",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) EnableSessionRecordingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSessionRecordingInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +588,26 @@ func (j *jsiiProxy_Target) SessionMaxSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Target) StorageBucketId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBucketId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Target) StorageBucketIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBucketIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Target) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -631,7 +679,7 @@ func (j *jsiiProxy_Target) WorkerFilterInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target boundary_target} Resource.
 func NewTarget(scope constructs.Construct, id *string, config *TargetConfig) Target {
 	_init_.Initialize()
 
@@ -649,7 +697,7 @@ func NewTarget(scope constructs.Construct, id *string, config *TargetConfig) Tar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target boundary_target} Resource.
 func NewTarget_Override(t Target, scope constructs.Construct, id *string, config *TargetConfig) {
 	_init_.Initialize()
 
@@ -752,6 +800,17 @@ func (j *jsiiProxy_Target)SetEgressWorkerFilter(val *string) {
 	_jsii_.Set(
 		j,
 		"egressWorkerFilter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Target)SetEnableSessionRecording(val interface{}) {
+	if err := j.validateSetEnableSessionRecordingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSessionRecording",
 		val,
 	)
 }
@@ -867,6 +926,17 @@ func (j *jsiiProxy_Target)SetSessionMaxSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"sessionMaxSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Target)SetStorageBucketId(val *string) {
+	if err := j.validateSetStorageBucketIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageBucketId",
 		val,
 	)
 }
@@ -1207,6 +1277,14 @@ func (t *jsiiProxy_Target) ResetEgressWorkerFilter() {
 	)
 }
 
+func (t *jsiiProxy_Target) ResetEnableSessionRecording() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetEnableSessionRecording",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_Target) ResetHostSourceIds() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1259,6 +1337,14 @@ func (t *jsiiProxy_Target) ResetSessionMaxSeconds() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetSessionMaxSeconds",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Target) ResetStorageBucketId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetStorageBucketId",
 		nil, // no parameters
 	)
 }

@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs boundary}.
 type BoundaryProvider interface {
 	cdktf.TerraformProvider
 	Addr() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_BoundaryProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs boundary} Resource.
 func NewBoundaryProvider(scope constructs.Construct, id *string, config *BoundaryProviderConfig) BoundaryProvider {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewBoundaryProvider(scope constructs.Construct, id *string, config *Boundar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs boundary} Resource.
 func NewBoundaryProvider_Override(b BoundaryProvider, scope constructs.Construct, id *string, config *BoundaryProviderConfig) {
 	_init_.Initialize()
 

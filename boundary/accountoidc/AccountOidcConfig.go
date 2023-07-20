@@ -21,23 +21,23 @@ type AccountOidcConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The resource ID for the auth method.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_oidc#auth_method_id AccountOidc#auth_method_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#auth_method_id AccountOidc#auth_method_id}
 	AuthMethodId *string `field:"required" json:"authMethodId" yaml:"authMethodId"`
 	// The account description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_oidc#description AccountOidc#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#description AccountOidc#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The OIDC issuer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_oidc#issuer AccountOidc#issuer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#issuer AccountOidc#issuer}
 	Issuer *string `field:"optional" json:"issuer" yaml:"issuer"`
 	// The account name. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_oidc#name AccountOidc#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#name AccountOidc#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The OIDC subject.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_oidc#subject AccountOidc#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#subject AccountOidc#subject}
 	Subject *string `field:"optional" json:"subject" yaml:"subject"`
 }
 
