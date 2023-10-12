@@ -24,19 +24,19 @@ type ManagedGroupLdapConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The resource ID for the auth method.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
 	AuthMethodId *string `field:"required" json:"authMethodId" yaml:"authMethodId"`
 	// The list of groups that make up the managed group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
 	GroupNames *[]*string `field:"required" json:"groupNames" yaml:"groupNames"`
 	// The managed group description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The managed group name. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

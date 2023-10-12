@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap boundary_auth_method_ldap}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap boundary_auth_method_ldap}.
 type AuthMethodLdap interface {
 	cdktf.TerraformResource
 	AccountAttributeMaps() *[]*string
@@ -58,6 +58,9 @@ type AuthMethodLdap interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DereferenceAliases() *string
+	SetDereferenceAliases(val *string)
+	DereferenceAliasesInput() *string
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -95,6 +98,9 @@ type AuthMethodLdap interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaximumPageSize() *float64
+	SetMaximumPageSize(val *float64)
+	MaximumPageSizeInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -180,6 +186,7 @@ type AuthMethodLdap interface {
 	ResetClientCertificate()
 	ResetClientCertificateKey()
 	ResetClientCertificateKeyHmac()
+	ResetDereferenceAliases()
 	ResetDescription()
 	ResetDiscoverDn()
 	ResetEnableGroups()
@@ -188,6 +195,7 @@ type AuthMethodLdap interface {
 	ResetGroupFilter()
 	ResetInsecureTls()
 	ResetIsPrimaryForScope()
+	ResetMaximumPageSize()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -446,6 +454,26 @@ func (j *jsiiProxy_AuthMethodLdap) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AuthMethodLdap) DereferenceAliases() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dereferenceAliases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthMethodLdap) DereferenceAliasesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dereferenceAliasesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthMethodLdap) Description() *string {
 	var returns *string
 	_jsii_.Get(
@@ -651,6 +679,26 @@ func (j *jsiiProxy_AuthMethodLdap) Lifecycle() *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthMethodLdap) MaximumPageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumPageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthMethodLdap) MaximumPageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maximumPageSizeInput",
 		&returns,
 	)
 	return returns
@@ -947,7 +995,7 @@ func (j *jsiiProxy_AuthMethodLdap) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap boundary_auth_method_ldap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap boundary_auth_method_ldap} Resource.
 func NewAuthMethodLdap(scope constructs.Construct, id *string, config *AuthMethodLdapConfig) AuthMethodLdap {
 	_init_.Initialize()
 
@@ -965,7 +1013,7 @@ func NewAuthMethodLdap(scope constructs.Construct, id *string, config *AuthMetho
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap boundary_auth_method_ldap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap boundary_auth_method_ldap} Resource.
 func NewAuthMethodLdap_Override(a AuthMethodLdap, scope constructs.Construct, id *string, config *AuthMethodLdapConfig) {
 	_init_.Initialize()
 
@@ -1105,6 +1153,17 @@ func (j *jsiiProxy_AuthMethodLdap)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_AuthMethodLdap)SetDereferenceAliases(val *string) {
+	if err := j.validateSetDereferenceAliasesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dereferenceAliases",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AuthMethodLdap)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -1208,6 +1267,17 @@ func (j *jsiiProxy_AuthMethodLdap)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AuthMethodLdap)SetMaximumPageSize(val *float64) {
+	if err := j.validateSetMaximumPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maximumPageSize",
 		val,
 	)
 }
@@ -1690,6 +1760,14 @@ func (a *jsiiProxy_AuthMethodLdap) ResetClientCertificateKeyHmac() {
 	)
 }
 
+func (a *jsiiProxy_AuthMethodLdap) ResetDereferenceAliases() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDereferenceAliases",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AuthMethodLdap) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1750,6 +1828,14 @@ func (a *jsiiProxy_AuthMethodLdap) ResetIsPrimaryForScope() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetIsPrimaryForScope",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthMethodLdap) ResetMaximumPageSize() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaximumPageSize",
 		nil, // no parameters
 	)
 }

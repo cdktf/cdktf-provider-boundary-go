@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_static boundary_host_set_static}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static boundary_host_set_static}.
 type HostSetStatic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -395,7 +395,7 @@ func (j *jsiiProxy_HostSetStatic) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_static boundary_host_set_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static boundary_host_set_static} Resource.
 func NewHostSetStatic(scope constructs.Construct, id *string, config *HostSetStaticConfig) HostSetStatic {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewHostSetStatic(scope constructs.Construct, id *string, config *HostSetSta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_static boundary_host_set_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static boundary_host_set_static} Resource.
 func NewHostSetStatic_Override(h HostSetStatic, scope constructs.Construct, id *string, config *HostSetStaticConfig) {
 	_init_.Initialize()
 

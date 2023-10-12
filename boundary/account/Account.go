@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account boundary_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/account boundary_account}.
 type Account interface {
 	cdktf.TerraformResource
 	AuthMethodId() *string
@@ -418,7 +418,7 @@ func (j *jsiiProxy_Account) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account boundary_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/account boundary_account} Resource.
 func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) Account {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account boundary_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/account boundary_account} Resource.
 func NewAccount_Override(a Account, scope constructs.Construct, id *string, config *AccountConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap boundary_account_ldap}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/account_ldap boundary_account_ldap}.
 type AccountLdap interface {
 	cdktf.TerraformResource
 	AuthMethodId() *string
@@ -395,7 +395,7 @@ func (j *jsiiProxy_AccountLdap) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap boundary_account_ldap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/account_ldap boundary_account_ldap} Resource.
 func NewAccountLdap(scope constructs.Construct, id *string, config *AccountLdapConfig) AccountLdap {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewAccountLdap(scope constructs.Construct, id *string, config *AccountLdapC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap boundary_account_ldap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/account_ldap boundary_account_ldap} Resource.
 func NewAccountLdap_Override(a AccountLdap, scope constructs.Construct, id *string, config *AccountLdapConfig) {
 	_init_.Initialize()
 

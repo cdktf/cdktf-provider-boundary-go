@@ -111,6 +111,10 @@ func (j *jsiiProxy_AuthMethodLdap) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_AuthMethodLdap) validateSetDereferenceAliasesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthMethodLdap) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -144,6 +148,10 @@ func (j *jsiiProxy_AuthMethodLdap) validateSetIsPrimaryForScopeParameters(val in
 }
 
 func (j *jsiiProxy_AuthMethodLdap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_AuthMethodLdap) validateSetMaximumPageSizeParameters(val *float64) error {
 	return nil
 }
 

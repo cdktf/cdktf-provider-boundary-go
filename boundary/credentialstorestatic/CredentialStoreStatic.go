@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_static boundary_credential_store_static}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static boundary_credential_store_static}.
 type CredentialStoreStatic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_CredentialStoreStatic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_static boundary_credential_store_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static boundary_credential_store_static} Resource.
 func NewCredentialStoreStatic(scope constructs.Construct, id *string, config *CredentialStoreStaticConfig) CredentialStoreStatic {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewCredentialStoreStatic(scope constructs.Construct, id *string, config *Cr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_static boundary_credential_store_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static boundary_credential_store_static} Resource.
 func NewCredentialStoreStatic_Override(c CredentialStoreStatic, scope constructs.Construct, id *string, config *CredentialStoreStaticConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password boundary_credential_username_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_username_password boundary_credential_username_password}.
 type CredentialUsernamePassword interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_CredentialUsernamePassword) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password boundary_credential_username_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_username_password boundary_credential_username_password} Resource.
 func NewCredentialUsernamePassword(scope constructs.Construct, id *string, config *CredentialUsernamePasswordConfig) CredentialUsernamePassword {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewCredentialUsernamePassword(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password boundary_credential_username_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_username_password boundary_credential_username_password} Resource.
 func NewCredentialUsernamePassword_Override(c CredentialUsernamePassword, scope constructs.Construct, id *string, config *CredentialUsernamePasswordConfig) {
 	_init_.Initialize()
 

@@ -312,6 +312,14 @@ func (j *jsiiProxy_AuthMethodLdap) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_AuthMethodLdap) validateSetDereferenceAliasesParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AuthMethodLdap) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -427,6 +435,14 @@ func (j *jsiiProxy_AuthMethodLdap) validateSetIsPrimaryForScopeParameters(val in
 func (j *jsiiProxy_AuthMethodLdap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AuthMethodLdap) validateSetMaximumPageSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
