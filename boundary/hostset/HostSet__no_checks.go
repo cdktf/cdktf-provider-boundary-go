@@ -7,6 +7,10 @@ package hostset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HostSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (h *jsiiProxy_HostSet) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (h *jsiiProxy_HostSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_HostSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostSet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHostSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

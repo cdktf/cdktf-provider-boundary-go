@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdap",
 		reflect.TypeOf((*ManagedGroupLdap)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authMethodId", GoGetter: "AuthMethodId"},
 			_jsii_.MemberProperty{JsiiProperty: "authMethodIdInput", GoGetter: "AuthMethodIdInput"},
@@ -39,8 +40,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "groupNames", GoGetter: "GroupNames"},
 			_jsii_.MemberProperty{JsiiProperty: "groupNamesInput", GoGetter: "GroupNamesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

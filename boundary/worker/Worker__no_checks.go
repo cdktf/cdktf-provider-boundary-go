@@ -7,6 +7,10 @@ package worker
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_Worker) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Worker) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (w *jsiiProxy_Worker) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (w *jsiiProxy_Worker) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Worker) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (w *jsiiProxy_Worker) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Worker) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateWorker_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

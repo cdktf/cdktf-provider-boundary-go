@@ -7,6 +7,10 @@ package managedgroupldap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedGroupLdap) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedGroupLdap) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_ManagedGroupLdap) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (m *jsiiProxy_ManagedGroupLdap) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedGroupLdap) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_ManagedGroupLdap) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedGroupLdap) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateManagedGroupLdap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

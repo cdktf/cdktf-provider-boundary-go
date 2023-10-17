@@ -5,10 +5,10 @@ package credentiallibraryvaultsshcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/credentiallibraryvaultsshcertificate/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvaultsshcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -95,6 +95,9 @@ type CredentialLibraryVaultSshCertificate interface {
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -116,7 +119,12 @@ type CredentialLibraryVaultSshCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -755,6 +763,25 @@ func (j *jsiiProxy_CredentialLibraryVaultSshCertificate)SetUsername(val *string)
 	)
 }
 
+// Generates CDKTF code for importing a CredentialLibraryVaultSshCertificate resource upon running "cdktf plan <stack-name>".
+func CredentialLibraryVaultSshCertificate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateCredentialLibraryVaultSshCertificate_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -837,6 +864,17 @@ func CredentialLibraryVaultSshCertificate_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) AddMoveTarget(moveTarget *string) {
+	if err := c.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) AddOverride(path *string, value interface{}) {
@@ -994,6 +1032,17 @@ func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) GetStringMapAttribute(t
 	return returns
 }
 
+func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := c.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1008,6 +1057,17 @@ func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) MoveTo(moveTarget *string, index interface{}) {
+	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) OverrideLogicalId(newLogicalId *string) {

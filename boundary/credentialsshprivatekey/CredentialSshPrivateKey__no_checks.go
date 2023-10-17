@@ -7,6 +7,10 @@ package credentialsshprivatekey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CredentialSshPrivateKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialSshPrivateKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CredentialSshPrivateKey) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CredentialSshPrivateKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialSshPrivateKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CredentialSshPrivateKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialSshPrivateKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCredentialSshPrivateKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

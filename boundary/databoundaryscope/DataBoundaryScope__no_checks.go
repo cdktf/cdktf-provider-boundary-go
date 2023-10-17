@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataBoundaryScope) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataBoundaryScope_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataBoundaryScope_IsConstructParameters(x interface{}) error {
 	return nil
 }

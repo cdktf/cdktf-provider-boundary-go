@@ -7,6 +7,10 @@ package credentialusernamepassword
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CredentialUsernamePassword) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialUsernamePassword) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CredentialUsernamePassword) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CredentialUsernamePassword) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialUsernamePassword) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CredentialUsernamePassword) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialUsernamePassword) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCredentialUsernamePassword_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

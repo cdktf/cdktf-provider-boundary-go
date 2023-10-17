@@ -7,6 +7,10 @@ package authmethodoidc
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AuthMethodOidc) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthMethodOidc) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AuthMethodOidc) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AuthMethodOidc) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthMethodOidc) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AuthMethodOidc) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthMethodOidc) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAuthMethodOidc_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

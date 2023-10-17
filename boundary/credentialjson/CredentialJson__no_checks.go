@@ -7,6 +7,10 @@ package credentialjson
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CredentialJson) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialJson) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CredentialJson) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CredentialJson) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialJson) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CredentialJson) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialJson) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCredentialJson_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

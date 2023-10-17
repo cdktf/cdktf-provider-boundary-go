@@ -7,6 +7,10 @@ package hostcatalogstatic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HostCatalogStatic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostCatalogStatic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (h *jsiiProxy_HostCatalogStatic) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (h *jsiiProxy_HostCatalogStatic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostCatalogStatic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_HostCatalogStatic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostCatalogStatic) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHostCatalogStatic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

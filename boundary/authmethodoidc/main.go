@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountClaimMaps", GoGetter: "AccountClaimMaps"},
 			_jsii_.MemberProperty{JsiiProperty: "accountClaimMapsInput", GoGetter: "AccountClaimMapsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedAudiences", GoGetter: "AllowedAudiences"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedAudiencesInput", GoGetter: "AllowedAudiencesInput"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idpCaCerts", GoGetter: "IdpCaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "idpCaCertsInput", GoGetter: "IdpCaCertsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isPrimaryForScope", GoGetter: "IsPrimaryForScope"},
 			_jsii_.MemberProperty{JsiiProperty: "isPrimaryForScopeInput", GoGetter: "IsPrimaryForScopeInput"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAge", GoGetter: "MaxAge"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAgeInput", GoGetter: "MaxAgeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

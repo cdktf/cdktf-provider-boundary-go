@@ -7,6 +7,10 @@ package hostcatalogplugin
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HostCatalogPlugin) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostCatalogPlugin) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (h *jsiiProxy_HostCatalogPlugin) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (h *jsiiProxy_HostCatalogPlugin) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostCatalogPlugin) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_HostCatalogPlugin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostCatalogPlugin) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHostCatalogPlugin_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

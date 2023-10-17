@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountAttributeMaps", GoGetter: "AccountAttributeMaps"},
 			_jsii_.MemberProperty{JsiiProperty: "accountAttributeMapsInput", GoGetter: "AccountAttributeMapsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "anonGroupSearch", GoGetter: "AnonGroupSearch"},
 			_jsii_.MemberProperty{JsiiProperty: "anonGroupSearchInput", GoGetter: "AnonGroupSearchInput"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "groupFilter", GoGetter: "GroupFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "groupFilterInput", GoGetter: "GroupFilterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "insecureTls", GoGetter: "InsecureTls"},
 			_jsii_.MemberProperty{JsiiProperty: "insecureTlsInput", GoGetter: "InsecureTlsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -73,6 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumPageSize", GoGetter: "MaximumPageSize"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumPageSizeInput", GoGetter: "MaximumPageSizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
