@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_oidc boundary_auth_method_oidc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_oidc boundary_auth_method_oidc}.
 type AuthMethodOidc interface {
 	cdktf.TerraformResource
 	AccountClaimMaps() *[]*string
@@ -91,6 +91,9 @@ type AuthMethodOidc interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Prompts() *[]*string
+	SetPrompts(val *[]*string)
+	PromptsInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -143,12 +146,22 @@ type AuthMethodOidc interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -170,6 +183,7 @@ type AuthMethodOidc interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrompts()
 	ResetSigningAlgorithms()
 	ResetState()
 	ResetType()
@@ -598,6 +612,26 @@ func (j *jsiiProxy_AuthMethodOidc) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AuthMethodOidc) Prompts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"prompts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthMethodOidc) PromptsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"promptsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AuthMethodOidc) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -739,7 +773,7 @@ func (j *jsiiProxy_AuthMethodOidc) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_oidc boundary_auth_method_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_oidc boundary_auth_method_oidc} Resource.
 func NewAuthMethodOidc(scope constructs.Construct, id *string, config *AuthMethodOidcConfig) AuthMethodOidc {
 	_init_.Initialize()
 
@@ -757,7 +791,7 @@ func NewAuthMethodOidc(scope constructs.Construct, id *string, config *AuthMetho
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_oidc boundary_auth_method_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_oidc boundary_auth_method_oidc} Resource.
 func NewAuthMethodOidc_Override(a AuthMethodOidc, scope constructs.Construct, id *string, config *AuthMethodOidcConfig) {
 	_init_.Initialize()
 
@@ -978,6 +1012,17 @@ func (j *jsiiProxy_AuthMethodOidc)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AuthMethodOidc)SetPrompts(val *[]*string) {
+	if err := j.validateSetPromptsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prompts",
 		val,
 	)
 }
@@ -1314,6 +1359,19 @@ func (a *jsiiProxy_AuthMethodOidc) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (a *jsiiProxy_AuthMethodOidc) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AuthMethodOidc) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1341,6 +1399,17 @@ func (a *jsiiProxy_AuthMethodOidc) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (a *jsiiProxy_AuthMethodOidc) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AuthMethodOidc) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1349,6 +1418,17 @@ func (a *jsiiProxy_AuthMethodOidc) MoveTo(moveTarget *string, index interface{})
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AuthMethodOidc) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1487,6 +1567,14 @@ func (a *jsiiProxy_AuthMethodOidc) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthMethodOidc) ResetPrompts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPrompts",
 		nil, // no parameters
 	)
 }

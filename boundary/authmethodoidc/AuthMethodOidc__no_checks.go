@@ -59,7 +59,15 @@ func (a *jsiiProxy_AuthMethodOidc) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AuthMethodOidc) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuthMethodOidc) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuthMethodOidc) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -152,6 +160,10 @@ func (j *jsiiProxy_AuthMethodOidc) validateSetMaxAgeParameters(val *float64) err
 }
 
 func (j *jsiiProxy_AuthMethodOidc) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AuthMethodOidc) validateSetPromptsParameters(val *[]*string) error {
 	return nil
 }
 

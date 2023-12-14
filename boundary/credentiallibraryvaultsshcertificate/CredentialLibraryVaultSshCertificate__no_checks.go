@@ -59,7 +59,15 @@ func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) validateInterpolationFo
 	return nil
 }
 
+func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

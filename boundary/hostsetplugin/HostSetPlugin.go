@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_plugin boundary_host_set_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_plugin boundary_host_set_plugin}.
 type HostSetPlugin interface {
 	cdktf.TerraformResource
 	AttributesJson() *string
@@ -107,12 +107,22 @@ type HostSetPlugin interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -451,7 +461,7 @@ func (j *jsiiProxy_HostSetPlugin) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_plugin boundary_host_set_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_plugin boundary_host_set_plugin} Resource.
 func NewHostSetPlugin(scope constructs.Construct, id *string, config *HostSetPluginConfig) HostSetPlugin {
 	_init_.Initialize()
 
@@ -469,7 +479,7 @@ func NewHostSetPlugin(scope constructs.Construct, id *string, config *HostSetPlu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_plugin boundary_host_set_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_plugin boundary_host_set_plugin} Resource.
 func NewHostSetPlugin_Override(h HostSetPlugin, scope constructs.Construct, id *string, config *HostSetPluginConfig) {
 	_init_.Initialize()
 
@@ -894,6 +904,19 @@ func (h *jsiiProxy_HostSetPlugin) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (h *jsiiProxy_HostSetPlugin) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (h *jsiiProxy_HostSetPlugin) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := h.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -921,6 +944,17 @@ func (h *jsiiProxy_HostSetPlugin) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
+func (h *jsiiProxy_HostSetPlugin) MoveFromId(id *string) {
+	if err := h.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (h *jsiiProxy_HostSetPlugin) MoveTo(moveTarget *string, index interface{}) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -929,6 +963,17 @@ func (h *jsiiProxy_HostSetPlugin) MoveTo(moveTarget *string, index interface{}) 
 		h,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (h *jsiiProxy_HostSetPlugin) MoveToId(id *string) {
+	if err := h.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

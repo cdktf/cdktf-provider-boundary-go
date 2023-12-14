@@ -24,23 +24,23 @@ type HostSetStaticConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The catalog for the host set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
 	HostCatalogId *string `field:"required" json:"hostCatalogId" yaml:"hostCatalogId"`
 	// The host set description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#description HostSetStatic#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#description HostSetStatic#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The list of host IDs contained in this set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#host_ids HostSetStatic#host_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#host_ids HostSetStatic#host_ids}
 	HostIds *[]*string `field:"optional" json:"hostIds" yaml:"hostIds"`
 	// The host set name. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#name HostSetStatic#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#name HostSetStatic#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The type of host set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#type HostSetStatic#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#type HostSetStatic#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

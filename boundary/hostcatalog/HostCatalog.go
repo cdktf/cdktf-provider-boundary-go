@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_catalog boundary_host_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_catalog boundary_host_catalog}.
 type HostCatalog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -98,12 +98,22 @@ type HostCatalog interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -378,7 +388,7 @@ func (j *jsiiProxy_HostCatalog) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_catalog boundary_host_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_catalog boundary_host_catalog} Resource.
 func NewHostCatalog(scope constructs.Construct, id *string, config *HostCatalogConfig) HostCatalog {
 	_init_.Initialize()
 
@@ -396,7 +406,7 @@ func NewHostCatalog(scope constructs.Construct, id *string, config *HostCatalogC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_catalog boundary_host_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_catalog boundary_host_catalog} Resource.
 func NewHostCatalog_Override(h HostCatalog, scope constructs.Construct, id *string, config *HostCatalogConfig) {
 	_init_.Initialize()
 
@@ -788,6 +798,19 @@ func (h *jsiiProxy_HostCatalog) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (h *jsiiProxy_HostCatalog) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (h *jsiiProxy_HostCatalog) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := h.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -815,6 +838,17 @@ func (h *jsiiProxy_HostCatalog) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (h *jsiiProxy_HostCatalog) MoveFromId(id *string) {
+	if err := h.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (h *jsiiProxy_HostCatalog) MoveTo(moveTarget *string, index interface{}) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -823,6 +857,17 @@ func (h *jsiiProxy_HostCatalog) MoveTo(moveTarget *string, index interface{}) {
 		h,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (h *jsiiProxy_HostCatalog) MoveToId(id *string) {
+	if err := h.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

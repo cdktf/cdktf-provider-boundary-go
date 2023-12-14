@@ -59,7 +59,15 @@ func (h *jsiiProxy_HostCatalogPlugin) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (h *jsiiProxy_HostCatalogPlugin) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostCatalogPlugin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HostCatalogPlugin) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

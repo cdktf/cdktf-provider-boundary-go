@@ -59,7 +59,15 @@ func (c *jsiiProxy_CredentialSshPrivateKey) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CredentialSshPrivateKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialSshPrivateKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CredentialSshPrivateKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

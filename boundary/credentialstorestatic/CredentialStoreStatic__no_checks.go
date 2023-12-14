@@ -59,7 +59,15 @@ func (c *jsiiProxy_CredentialStoreStatic) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CredentialStoreStatic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CredentialStoreStatic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CredentialStoreStatic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

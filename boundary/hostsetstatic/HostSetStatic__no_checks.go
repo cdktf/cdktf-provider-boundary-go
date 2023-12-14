@@ -59,7 +59,15 @@ func (h *jsiiProxy_HostSetStatic) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (h *jsiiProxy_HostSetStatic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostSetStatic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HostSetStatic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

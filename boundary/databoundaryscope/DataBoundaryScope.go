@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/data-sources/scope boundary_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/scope boundary_scope}.
 type DataBoundaryScope interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataBoundaryScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/data-sources/scope boundary_scope} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/scope boundary_scope} Data Source.
 func NewDataBoundaryScope(scope constructs.Construct, id *string, config *DataBoundaryScopeConfig) DataBoundaryScope {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataBoundaryScope(scope constructs.Construct, id *string, config *DataBo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/data-sources/scope boundary_scope} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/scope boundary_scope} Data Source.
 func NewDataBoundaryScope_Override(d DataBoundaryScope, scope constructs.Construct, id *string, config *DataBoundaryScopeConfig) {
 	_init_.Initialize()
 
