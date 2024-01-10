@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/storage_bucket boundary_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket boundary_storage_bucket}.
 type StorageBucket interface {
 	cdktf.TerraformResource
 	AttributesJson() *string
@@ -574,7 +574,7 @@ func (j *jsiiProxy_StorageBucket) WorkerFilterInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/storage_bucket boundary_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket boundary_storage_bucket} Resource.
 func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBucketConfig) StorageBucket {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBuc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/storage_bucket boundary_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket boundary_storage_bucket} Resource.
 func NewStorageBucket_Override(s StorageBucket, scope constructs.Construct, id *string, config *StorageBucketConfig) {
 	_init_.Initialize()
 

@@ -24,11 +24,11 @@ type DataBoundaryGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the group to retrieve.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/group#name DataBoundaryGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group#name DataBoundaryGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The scope ID in which the resource is created. Defaults `global` if unset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/group#scope_id DataBoundaryGroup#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group#scope_id DataBoundaryGroup#scope_id}
 	ScopeId *string `field:"optional" json:"scopeId" yaml:"scopeId"`
 }
 

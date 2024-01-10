@@ -91,6 +91,10 @@ func validateCredentialLibraryVaultSshCertificate_IsTerraformResourceParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) validateSetAdditionalValidPrincipalsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

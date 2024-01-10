@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/group boundary_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group boundary_group}.
 type DataBoundaryGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataBoundaryGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/group boundary_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group boundary_group} Data Source.
 func NewDataBoundaryGroup(scope constructs.Construct, id *string, config *DataBoundaryGroupConfig) DataBoundaryGroup {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataBoundaryGroup(scope constructs.Construct, id *string, config *DataBo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/group boundary_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group boundary_group} Data Source.
 func NewDataBoundaryGroup_Override(d DataBoundaryGroup, scope constructs.Construct, id *string, config *DataBoundaryGroupConfig) {
 	_init_.Initialize()
 

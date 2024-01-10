@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate",
 		reflect.TypeOf((*CredentialLibraryVaultSshCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "additionalValidPrincipals", GoGetter: "AdditionalValidPrincipals"},
+			_jsii_.MemberProperty{JsiiProperty: "additionalValidPrincipalsInput", GoGetter: "AdditionalValidPrincipalsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -64,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalValidPrincipals", GoMethod: "ResetAdditionalValidPrincipals"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCriticalOptions", GoMethod: "ResetCriticalOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExtensions", GoMethod: "ResetExtensions"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/auth_method boundary_auth_method}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/auth_method boundary_auth_method}.
 type DataBoundaryAuthMethod interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataBoundaryAuthMethod) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/auth_method boundary_auth_method} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/auth_method boundary_auth_method} Data Source.
 func NewDataBoundaryAuthMethod(scope constructs.Construct, id *string, config *DataBoundaryAuthMethodConfig) DataBoundaryAuthMethod {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataBoundaryAuthMethod(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/auth_method boundary_auth_method} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/auth_method boundary_auth_method} Data Source.
 func NewDataBoundaryAuthMethod_Override(d DataBoundaryAuthMethod, scope constructs.Construct, id *string, config *DataBoundaryAuthMethodConfig) {
 	_init_.Initialize()
 

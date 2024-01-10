@@ -24,15 +24,15 @@ type CredentialStoreStaticConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The scope for this credential store.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
 	ScopeId *string `field:"required" json:"scopeId" yaml:"scopeId"`
 	// The static credential store description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#description CredentialStoreStatic#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#description CredentialStoreStatic#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The static credential store name. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#name CredentialStoreStatic#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#name CredentialStoreStatic#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

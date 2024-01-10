@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate}.
 type CredentialLibraryVaultSshCertificate interface {
 	cdktf.TerraformResource
+	AdditionalValidPrincipals() *[]*string
+	SetAdditionalValidPrincipals(val *[]*string)
+	AdditionalValidPrincipalsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -138,6 +141,7 @@ type CredentialLibraryVaultSshCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAdditionalValidPrincipals()
 	ResetCriticalOptions()
 	ResetDescription()
 	ResetExtensions()
@@ -162,6 +166,26 @@ type CredentialLibraryVaultSshCertificate interface {
 // The jsii proxy struct for CredentialLibraryVaultSshCertificate
 type jsiiProxy_CredentialLibraryVaultSshCertificate struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) AdditionalValidPrincipals() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalValidPrincipals",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) AdditionalValidPrincipalsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalValidPrincipalsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) CdktfStack() cdktf.TerraformStack {
@@ -555,7 +579,7 @@ func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) UsernameInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
 func NewCredentialLibraryVaultSshCertificate(scope constructs.Construct, id *string, config *CredentialLibraryVaultSshCertificateConfig) CredentialLibraryVaultSshCertificate {
 	_init_.Initialize()
 
@@ -573,7 +597,7 @@ func NewCredentialLibraryVaultSshCertificate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
 func NewCredentialLibraryVaultSshCertificate_Override(c CredentialLibraryVaultSshCertificate, scope constructs.Construct, id *string, config *CredentialLibraryVaultSshCertificateConfig) {
 	_init_.Initialize()
 
@@ -581,6 +605,17 @@ func NewCredentialLibraryVaultSshCertificate_Override(c CredentialLibraryVaultSs
 		"@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CredentialLibraryVaultSshCertificate)SetAdditionalValidPrincipals(val *[]*string) {
+	if err := j.validateSetAdditionalValidPrincipalsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalValidPrincipals",
+		val,
 	)
 }
 
@@ -1123,6 +1158,14 @@ func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) OverrideLogicalId(newLo
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CredentialLibraryVaultSshCertificate) ResetAdditionalValidPrincipals() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdditionalValidPrincipals",
+		nil, // no parameters
 	)
 }
 

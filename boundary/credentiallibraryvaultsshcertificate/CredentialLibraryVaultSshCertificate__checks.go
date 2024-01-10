@@ -247,6 +247,14 @@ func validateCredentialLibraryVaultSshCertificate_IsTerraformResourceParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) validateSetAdditionalValidPrincipalsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
