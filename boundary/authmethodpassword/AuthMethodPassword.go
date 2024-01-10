@@ -5,10 +5,10 @@ package authmethodpassword
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodpassword/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/authmethodpassword/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -132,6 +132,9 @@ type AuthMethodPassword interface {
 	ResetOverrideLogicalId()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1007,6 +1010,32 @@ func (a *jsiiProxy_AuthMethodPassword) SynthesizeAttributes() *map[string]interf
 	_jsii_.Invoke(
 		a,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AuthMethodPassword) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AuthMethodPassword) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

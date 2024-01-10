@@ -5,10 +5,10 @@ package credentialstorevault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialstorevault/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/credentialstorevault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -156,6 +156,9 @@ type CredentialStoreVault interface {
 	ResetTlsSkipVerify()
 	ResetWorkerFilter()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1269,6 +1272,32 @@ func (c *jsiiProxy_CredentialStoreVault) SynthesizeAttributes() *map[string]inte
 	_jsii_.Invoke(
 		c,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CredentialStoreVault) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_CredentialStoreVault) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

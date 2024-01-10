@@ -7,6 +7,10 @@ package databoundarygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataBoundaryGroupScopeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataBoundaryGroupScopeList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -5,10 +5,10 @@ package worker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/worker/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/worker/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -129,6 +129,9 @@ type Worker interface {
 	ResetScopeId()
 	ResetWorkerGeneratedAuthToken()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -974,6 +977,32 @@ func (w *jsiiProxy_Worker) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		w,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_Worker) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		w,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_Worker) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

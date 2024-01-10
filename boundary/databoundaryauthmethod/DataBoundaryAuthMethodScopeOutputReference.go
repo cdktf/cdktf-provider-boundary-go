@@ -5,9 +5,9 @@ package databoundaryauthmethod
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryauthmethod/internal"
+	"github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryauthmethod/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
