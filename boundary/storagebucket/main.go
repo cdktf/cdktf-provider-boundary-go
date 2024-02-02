@@ -70,6 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPluginId", GoMethod: "ResetPluginId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPluginName", GoMethod: "ResetPluginName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretsJson", GoMethod: "ResetSecretsJson"},
 			_jsii_.MemberProperty{JsiiProperty: "scopeId", GoGetter: "ScopeId"},
 			_jsii_.MemberProperty{JsiiProperty: "scopeIdInput", GoGetter: "ScopeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretsHmac", GoGetter: "SecretsHmac"},

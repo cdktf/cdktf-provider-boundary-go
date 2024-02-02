@@ -24,23 +24,23 @@ type CredentialUsernamePasswordConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The credential store in which to save this username/password credential.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
 	CredentialStoreId *string `field:"required" json:"credentialStoreId" yaml:"credentialStoreId"`
 	// The password of this username/password credential.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
 	Password *string `field:"required" json:"password" yaml:"password"`
 	// The username of this username/password credential.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// The description of this username/password credential.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The name of this username/password credential. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -24,11 +24,11 @@ type DataBoundaryScopeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the scope to retrieve.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/scope#name DataBoundaryScope#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/scope#name DataBoundaryScope#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The parent scope ID that will be queried for the scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/scope#scope_id DataBoundaryScope#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/scope#scope_id DataBoundaryScope#scope_id}
 	ScopeId *string `field:"required" json:"scopeId" yaml:"scopeId"`
 }
 

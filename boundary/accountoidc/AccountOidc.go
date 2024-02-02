@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc boundary_account_oidc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc boundary_account_oidc}.
 type AccountOidc interface {
 	cdktf.TerraformResource
 	AuthMethodId() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_AccountOidc) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc boundary_account_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc boundary_account_oidc} Resource.
 func NewAccountOidc(scope constructs.Construct, id *string, config *AccountOidcConfig) AccountOidc {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewAccountOidc(scope constructs.Construct, id *string, config *AccountOidcC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc boundary_account_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc boundary_account_oidc} Resource.
 func NewAccountOidc_Override(a AccountOidc, scope constructs.Construct, id *string, config *AccountOidcConfig) {
 	_init_.Initialize()
 

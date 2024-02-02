@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate}.
 type CredentialLibraryVaultSshCertificate interface {
 	cdktf.TerraformResource
 	AdditionalValidPrincipals() *[]*string
@@ -582,7 +582,7 @@ func (j *jsiiProxy_CredentialLibraryVaultSshCertificate) UsernameInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
 func NewCredentialLibraryVaultSshCertificate(scope constructs.Construct, id *string, config *CredentialLibraryVaultSshCertificateConfig) CredentialLibraryVaultSshCertificate {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewCredentialLibraryVaultSshCertificate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate} Resource.
 func NewCredentialLibraryVaultSshCertificate_Override(c CredentialLibraryVaultSshCertificate, scope constructs.Construct, id *string, config *CredentialLibraryVaultSshCertificateConfig) {
 	_init_.Initialize()
 
