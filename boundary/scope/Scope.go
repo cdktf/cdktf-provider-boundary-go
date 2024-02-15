@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/scope boundary_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope boundary_scope}.
 type Scope interface {
 	cdktf.TerraformResource
 	AutoCreateAdminRole() interface{}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_Scope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/scope boundary_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope boundary_scope} Resource.
 func NewScope(scope constructs.Construct, id *string, config *ScopeConfig) Scope {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewScope(scope constructs.Construct, id *string, config *ScopeConfig) Scope
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/scope boundary_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope boundary_scope} Resource.
 func NewScope_Override(s Scope, scope constructs.Construct, id *string, config *ScopeConfig) {
 	_init_.Initialize()
 

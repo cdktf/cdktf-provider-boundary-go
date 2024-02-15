@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/role boundary_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/role boundary_role}.
 type Role interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,9 @@ type Role interface {
 	GrantScopeId() *string
 	SetGrantScopeId(val *string)
 	GrantScopeIdInput() *string
+	GrantScopeIds() *[]*string
+	SetGrantScopeIds(val *[]*string)
+	GrantScopeIdsInput() *[]*string
 	GrantStrings() *[]*string
 	SetGrantStrings(val *[]*string)
 	GrantStringsInput() *[]*string
@@ -125,6 +128,7 @@ type Role interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
 	ResetGrantScopeId()
+	ResetGrantScopeIds()
 	ResetGrantStrings()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -264,6 +268,26 @@ func (j *jsiiProxy_Role) GrantScopeIdInput() *string {
 	_jsii_.Get(
 		j,
 		"grantScopeIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Role) GrantScopeIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"grantScopeIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Role) GrantScopeIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"grantScopeIdsInput",
 		&returns,
 	)
 	return returns
@@ -440,7 +464,7 @@ func (j *jsiiProxy_Role) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/role boundary_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/role boundary_role} Resource.
 func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	_init_.Initialize()
 
@@ -458,7 +482,7 @@ func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/role boundary_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/role boundary_role} Resource.
 func NewRole_Override(r Role, scope constructs.Construct, id *string, config *RoleConfig) {
 	_init_.Initialize()
 
@@ -525,6 +549,17 @@ func (j *jsiiProxy_Role)SetGrantScopeId(val *string) {
 	_jsii_.Set(
 		j,
 		"grantScopeId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Role)SetGrantScopeIds(val *[]*string) {
+	if err := j.validateSetGrantScopeIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"grantScopeIds",
 		val,
 	)
 }
@@ -968,6 +1003,14 @@ func (r *jsiiProxy_Role) ResetGrantScopeId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetGrantScopeId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Role) ResetGrantScopeIds() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGrantScopeIds",
 		nil, // no parameters
 	)
 }

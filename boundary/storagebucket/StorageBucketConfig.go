@@ -24,49 +24,49 @@ type StorageBucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the bucket within the external object store service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#bucket_name StorageBucket#bucket_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#bucket_name StorageBucket#bucket_name}
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
 	// The scope for this storage bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#scope_id StorageBucket#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#scope_id StorageBucket#scope_id}
 	ScopeId *string `field:"required" json:"scopeId" yaml:"scopeId"`
 	// Filters to the worker(s) that can handle requests for this storage bucket.
 	//
 	// The filter must match an existing worker in order to create a storage bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#worker_filter StorageBucket#worker_filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#worker_filter StorageBucket#worker_filter}
 	WorkerFilter *string `field:"required" json:"workerFilter" yaml:"workerFilter"`
 	// The attributes for the storage bucket.
 	//
 	// The "region" attribute field is required when creating an AWS storage bucket. Values are either encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the storage bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#attributes_json StorageBucket#attributes_json}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#attributes_json StorageBucket#attributes_json}
 	AttributesJson *string `field:"optional" json:"attributesJson" yaml:"attributesJson"`
 	// The prefix used to organize the data held within the external object store.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#bucket_prefix StorageBucket#bucket_prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#bucket_prefix StorageBucket#bucket_prefix}
 	BucketPrefix *string `field:"optional" json:"bucketPrefix" yaml:"bucketPrefix"`
 	// The storage bucket description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#description StorageBucket#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#description StorageBucket#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The storage bucket name. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#name StorageBucket#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#name StorageBucket#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The ID of the plugin that should back the resource. This or plugin_name must be defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#plugin_id StorageBucket#plugin_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#plugin_id StorageBucket#plugin_id}
 	PluginId *string `field:"optional" json:"pluginId" yaml:"pluginId"`
 	// The name of the plugin that should back the resource. This or plugin_id must be defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#plugin_name StorageBucket#plugin_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#plugin_name StorageBucket#plugin_name}
 	PluginName *string `field:"optional" json:"pluginName" yaml:"pluginName"`
 	// The secrets for the storage bucket.
 	//
 	// Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" to clear any existing values. NOTE: Unlike "attributes_json", removing this block will NOT clear secrets from the storage bucket; this allows injecting secrets for one call, then removing them for storage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#secrets_json StorageBucket#secrets_json}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/storage_bucket#secrets_json StorageBucket#secrets_json}
 	SecretsJson *string `field:"optional" json:"secretsJson" yaml:"secretsJson"`
 }
 

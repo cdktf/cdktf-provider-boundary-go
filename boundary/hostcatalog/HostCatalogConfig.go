@@ -24,19 +24,19 @@ type HostCatalogConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The scope ID in which the resource is created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
 	ScopeId *string `field:"required" json:"scopeId" yaml:"scopeId"`
 	// The host catalog type. Only `static` is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#type HostCatalog#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#type HostCatalog#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// The host catalog description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#description HostCatalog#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#description HostCatalog#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The host catalog name. Defaults to the resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#name HostCatalog#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#name HostCatalog#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/user boundary_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/user boundary_user}.
 type DataBoundaryUser interface {
 	cdktf.TerraformDataSource
 	AccountIds() *[]*string
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataBoundaryUser) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/user boundary_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/user boundary_user} Data Source.
 func NewDataBoundaryUser(scope constructs.Construct, id *string, config *DataBoundaryUserConfig) DataBoundaryUser {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataBoundaryUser(scope constructs.Construct, id *string, config *DataBou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/user boundary_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/user boundary_user} Data Source.
 func NewDataBoundaryUser_Override(d DataBoundaryUser, scope constructs.Construct, id *string, config *DataBoundaryUserConfig) {
 	_init_.Initialize()
 
