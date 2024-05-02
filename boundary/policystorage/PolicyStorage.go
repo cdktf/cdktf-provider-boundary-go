@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/policy_storage boundary_policy_storage}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/policy_storage boundary_policy_storage}.
 type PolicyStorage interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_PolicyStorage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/policy_storage boundary_policy_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/policy_storage boundary_policy_storage} Resource.
 func NewPolicyStorage(scope constructs.Construct, id *string, config *PolicyStorageConfig) PolicyStorage {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewPolicyStorage(scope constructs.Construct, id *string, config *PolicyStor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/policy_storage boundary_policy_storage} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/policy_storage boundary_policy_storage} Resource.
 func NewPolicyStorage_Override(p PolicyStorage, scope constructs.Construct, id *string, config *PolicyStorageConfig) {
 	_init_.Initialize()
 

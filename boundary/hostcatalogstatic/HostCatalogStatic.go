@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog_static boundary_host_catalog_static}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_static boundary_host_catalog_static}.
 type HostCatalogStatic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_HostCatalogStatic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog_static boundary_host_catalog_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_static boundary_host_catalog_static} Resource.
 func NewHostCatalogStatic(scope constructs.Construct, id *string, config *HostCatalogStaticConfig) HostCatalogStatic {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewHostCatalogStatic(scope constructs.Construct, id *string, config *HostCa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog_static boundary_host_catalog_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_static boundary_host_catalog_static} Resource.
 func NewHostCatalogStatic_Override(h HostCatalogStatic, scope constructs.Construct, id *string, config *HostCatalogStaticConfig) {
 	_init_.Initialize()
 

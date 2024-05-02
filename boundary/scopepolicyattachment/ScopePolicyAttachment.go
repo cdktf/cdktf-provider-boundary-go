@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment boundary_scope_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment boundary_scope_policy_attachment}.
 type ScopePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ScopePolicyAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment boundary_scope_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment boundary_scope_policy_attachment} Resource.
 func NewScopePolicyAttachment(scope constructs.Construct, id *string, config *ScopePolicyAttachmentConfig) ScopePolicyAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewScopePolicyAttachment(scope constructs.Construct, id *string, config *Sc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment boundary_scope_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment boundary_scope_policy_attachment} Resource.
 func NewScopePolicyAttachment_Override(s ScopePolicyAttachment, scope constructs.Construct, id *string, config *ScopePolicyAttachmentConfig) {
 	_init_.Initialize()
 
