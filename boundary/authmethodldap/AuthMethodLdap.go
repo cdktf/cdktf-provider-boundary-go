@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/auth_method_ldap boundary_auth_method_ldap}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/auth_method_ldap boundary_auth_method_ldap}.
 type AuthMethodLdap interface {
 	cdktf.TerraformResource
 	AccountAttributeMaps() *[]*string
@@ -1016,7 +1016,7 @@ func (j *jsiiProxy_AuthMethodLdap) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/auth_method_ldap boundary_auth_method_ldap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/auth_method_ldap boundary_auth_method_ldap} Resource.
 func NewAuthMethodLdap(scope constructs.Construct, id *string, config *AuthMethodLdapConfig) AuthMethodLdap {
 	_init_.Initialize()
 
@@ -1034,7 +1034,7 @@ func NewAuthMethodLdap(scope constructs.Construct, id *string, config *AuthMetho
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/auth_method_ldap boundary_auth_method_ldap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/auth_method_ldap boundary_auth_method_ldap} Resource.
 func NewAuthMethodLdap_Override(a AuthMethodLdap, scope constructs.Construct, id *string, config *AuthMethodLdapConfig) {
 	_init_.Initialize()
 

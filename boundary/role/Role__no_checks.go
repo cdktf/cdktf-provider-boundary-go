@@ -103,10 +103,6 @@ func (j *jsiiProxy_Role) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Role) validateSetGrantScopeIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Role) validateSetGrantScopeIdsParameters(val *[]*string) error {
 	return nil
 }

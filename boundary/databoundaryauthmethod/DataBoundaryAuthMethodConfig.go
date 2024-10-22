@@ -24,11 +24,11 @@ type DataBoundaryAuthMethodConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the auth method to retrieve.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/auth_method#name DataBoundaryAuthMethod#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/auth_method#name DataBoundaryAuthMethod#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The scope ID in which the resource is created. Defaults `global` if unset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/auth_method#scope_id DataBoundaryAuthMethod#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/auth_method#scope_id DataBoundaryAuthMethod#scope_id}
 	ScopeId *string `field:"optional" json:"scopeId" yaml:"scopeId"`
 }
 

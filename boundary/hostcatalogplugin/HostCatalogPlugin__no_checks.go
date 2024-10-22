@@ -151,6 +151,10 @@ func (j *jsiiProxy_HostCatalogPlugin) validateSetSecretsJsonParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_HostCatalogPlugin) validateSetWorkerFilterParameters(val *string) error {
+	return nil
+}
+
 func validateNewHostCatalogPluginParameters(scope constructs.Construct, id *string, config *HostCatalogPluginConfig) error {
 	return nil
 }

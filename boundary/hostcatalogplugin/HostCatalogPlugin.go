@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin boundary_host_catalog_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin boundary_host_catalog_plugin}.
 type HostCatalogPlugin interface {
 	cdktf.TerraformResource
 	AttributesJson() *string
@@ -95,6 +95,9 @@ type HostCatalogPlugin interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkerFilter() *string
+	SetWorkerFilter(val *string)
+	WorkerFilterInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -151,6 +154,7 @@ type HostCatalogPlugin interface {
 	ResetPluginName()
 	ResetSecretsHmac()
 	ResetSecretsJson()
+	ResetWorkerFilter()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -559,8 +563,28 @@ func (j *jsiiProxy_HostCatalogPlugin) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_HostCatalogPlugin) WorkerFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerFilter",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
+func (j *jsiiProxy_HostCatalogPlugin) WorkerFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workerFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
 func NewHostCatalogPlugin(scope constructs.Construct, id *string, config *HostCatalogPluginConfig) HostCatalogPlugin {
 	_init_.Initialize()
 
@@ -578,7 +602,7 @@ func NewHostCatalogPlugin(scope constructs.Construct, id *string, config *HostCa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin boundary_host_catalog_plugin} Resource.
 func NewHostCatalogPlugin_Override(h HostCatalogPlugin, scope constructs.Construct, id *string, config *HostCatalogPluginConfig) {
 	_init_.Initialize()
 
@@ -774,6 +798,17 @@ func (j *jsiiProxy_HostCatalogPlugin)SetSecretsJson(val *string) {
 	_jsii_.Set(
 		j,
 		"secretsJson",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HostCatalogPlugin)SetWorkerFilter(val *string) {
+	if err := j.validateSetWorkerFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workerFilter",
 		val,
 	)
 }
@@ -1215,6 +1250,14 @@ func (h *jsiiProxy_HostCatalogPlugin) ResetSecretsJson() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetSecretsJson",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HostCatalogPlugin) ResetWorkerFilter() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetWorkerFilter",
 		nil, // no parameters
 	)
 }

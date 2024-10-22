@@ -73,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPluginName", GoMethod: "ResetPluginName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretsHmac", GoMethod: "ResetSecretsHmac"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretsJson", GoMethod: "ResetSecretsJson"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkerFilter", GoMethod: "ResetWorkerFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "scopeId", GoGetter: "ScopeId"},
 			_jsii_.MemberProperty{JsiiProperty: "scopeIdInput", GoGetter: "ScopeIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretsHmac", GoGetter: "SecretsHmac"},
@@ -88,6 +89,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "workerFilter", GoGetter: "WorkerFilter"},
+			_jsii_.MemberProperty{JsiiProperty: "workerFilterInput", GoGetter: "WorkerFilterInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_HostCatalogPlugin{}
