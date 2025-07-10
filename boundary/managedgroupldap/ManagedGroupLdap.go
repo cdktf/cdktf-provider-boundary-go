@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/managed_group_ldap boundary_managed_group_ldap}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap boundary_managed_group_ldap}.
 type ManagedGroupLdap interface {
 	cdktf.TerraformResource
 	AuthMethodId() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ManagedGroupLdap) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/managed_group_ldap boundary_managed_group_ldap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap boundary_managed_group_ldap} Resource.
 func NewManagedGroupLdap(scope constructs.Construct, id *string, config *ManagedGroupLdapConfig) ManagedGroupLdap {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewManagedGroupLdap(scope constructs.Construct, id *string, config *Managed
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/managed_group_ldap boundary_managed_group_ldap} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap boundary_managed_group_ldap} Resource.
 func NewManagedGroupLdap_Override(m ManagedGroupLdap, scope constructs.Construct, id *string, config *ManagedGroupLdapConfig) {
 	_init_.Initialize()
 

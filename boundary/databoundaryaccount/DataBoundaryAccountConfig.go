@@ -24,11 +24,11 @@ type DataBoundaryAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The auth method ID that will be queried for the account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
 	AuthMethodId *string `field:"required" json:"authMethodId" yaml:"authMethodId"`
 	// The name of the account to retrieve.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/account#name DataBoundaryAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/data-sources/account#name DataBoundaryAccount#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

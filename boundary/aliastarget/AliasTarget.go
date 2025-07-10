@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target boundary_alias_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target boundary_alias_target}.
 type AliasTarget interface {
 	cdktf.TerraformResource
 	AuthorizeSessionHostId() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_AliasTarget) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target boundary_alias_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target boundary_alias_target} Resource.
 func NewAliasTarget(scope constructs.Construct, id *string, config *AliasTargetConfig) AliasTarget {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewAliasTarget(scope constructs.Construct, id *string, config *AliasTargetC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target boundary_alias_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target boundary_alias_target} Resource.
 func NewAliasTarget_Override(a AliasTarget, scope constructs.Construct, id *string, config *AliasTargetConfig) {
 	_init_.Initialize()
 

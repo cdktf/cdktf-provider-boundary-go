@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account_password boundary_account_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account_password boundary_account_password}.
 type AccountPassword interface {
 	cdktf.TerraformResource
 	AuthMethodId() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_AccountPassword) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account_password boundary_account_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account_password boundary_account_password} Resource.
 func NewAccountPassword(scope constructs.Construct, id *string, config *AccountPasswordConfig) AccountPassword {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewAccountPassword(scope constructs.Construct, id *string, config *AccountP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account_password boundary_account_password} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account_password boundary_account_password} Resource.
 func NewAccountPassword_Override(a AccountPassword, scope constructs.Construct, id *string, config *AccountPasswordConfig) {
 	_init_.Initialize()
 
