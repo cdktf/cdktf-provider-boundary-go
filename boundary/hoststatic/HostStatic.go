@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/host_static boundary_host_static}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static boundary_host_static}.
 type HostStatic interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_HostStatic) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/host_static boundary_host_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static boundary_host_static} Resource.
 func NewHostStatic(scope constructs.Construct, id *string, config *HostStaticConfig) HostStatic {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewHostStatic(scope constructs.Construct, id *string, config *HostStaticCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/host_static boundary_host_static} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static boundary_host_static} Resource.
 func NewHostStatic_Override(h HostStatic, scope constructs.Construct, id *string, config *HostStaticConfig) {
 	_init_.Initialize()
 

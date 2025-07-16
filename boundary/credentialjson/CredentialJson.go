@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/credential_json boundary_credential_json}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/credential_json boundary_credential_json}.
 type CredentialJson interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_CredentialJson) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/credential_json boundary_credential_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/credential_json boundary_credential_json} Resource.
 func NewCredentialJson(scope constructs.Construct, id *string, config *CredentialJsonConfig) CredentialJson {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewCredentialJson(scope constructs.Construct, id *string, config *Credentia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/credential_json boundary_credential_json} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/credential_json boundary_credential_json} Resource.
 func NewCredentialJson_Override(c CredentialJson, scope constructs.Construct, id *string, config *CredentialJsonConfig) {
 	_init_.Initialize()
 

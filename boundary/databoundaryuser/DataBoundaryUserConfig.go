@@ -24,11 +24,11 @@ type DataBoundaryUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The username to search for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/data-sources/user#name DataBoundaryUser#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/user#name DataBoundaryUser#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The scope ID in which the resource is created. Defaults `global` if unset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/data-sources/user#scope_id DataBoundaryUser#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/user#scope_id DataBoundaryUser#scope_id}
 	ScopeId *string `field:"optional" json:"scopeId" yaml:"scopeId"`
 }
 
