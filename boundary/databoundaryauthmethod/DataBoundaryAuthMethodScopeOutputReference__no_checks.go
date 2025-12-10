@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataBoundaryAuthMethodScopeOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DataBoundaryAuthMethodScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataBoundaryAuthMethodScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataBoundaryAuthMethodScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataBoundaryAuthMethodScopeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

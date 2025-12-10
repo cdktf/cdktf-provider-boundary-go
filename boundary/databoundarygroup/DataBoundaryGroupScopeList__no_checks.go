@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataBoundaryGroupScopeList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataBoundaryGroupScopeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataBoundaryGroupScopeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
